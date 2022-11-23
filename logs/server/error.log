@@ -1,0 +1,14 @@
+error: 
+    status - 500 
+    message - Error: Already Exist EmailId
+    at _callee$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:7:11)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-11-23T16:09:33.281Z"}
