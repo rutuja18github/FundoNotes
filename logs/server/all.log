@@ -135,3 +135,53 @@ error:
     method - POST 
     IP - ::1
    {"timestamp":"2022-11-23T16:48:49.911Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-24T02:45:56.014Z"}
+info: Connected to the database. {"timestamp":"2022-11-24T02:45:58.943Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be at least 8 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-11-24T02:46:35.860Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-11-24T02:47:34.058Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is required 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-11-24T03:11:44.016Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" is required 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-11-24T03:12:00.140Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" is required 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-11-24T03:12:10.587Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is required 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-11-24T03:12:28.692Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-24T03:29:15.332Z"}
+info: Connected to the database. {"timestamp":"2022-11-24T03:29:17.959Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-24T03:30:13.856Z"}
+info: Connected to the database. {"timestamp":"2022-11-24T03:30:16.452Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-24T13:20:07.707Z"}
+info: Connected to the database. {"timestamp":"2022-11-24T13:20:11.695Z"}
