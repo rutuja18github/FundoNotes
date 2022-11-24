@@ -19,12 +19,12 @@ export const newUserRegister = async (body) => {
 
 //login user
 export const login = async (body) => {
-  const data = await User.find({ email: body.email });
+  const data = await User.findOne({ email: body.email });
   // Check if email id present or not
   if (data.length !== 0) {
-    const data = await User.find({ password: body.password });
-    if (data.length !== 0) {
-      
+    console.log('Password',body.password);
+    const result = await bcrypt.compare(body.password,data.password)
+    if (result) {
       return data;
     } else {
       throw new Error('Enter valid Password');

@@ -169,3 +169,18 @@ info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-24T1
 info: Connected to the database. {"timestamp":"2022-11-24T14:54:11.168Z"}
 info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-24T15:00:50.547Z"}
 info: Connected to the database. {"timestamp":"2022-11-24T15:00:54.306Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-24T15:10:48.942Z"}
+info: Connected to the database. {"timestamp":"2022-11-24T15:10:51.843Z"}
+error: 
+    status - 500 
+    message - Error: Enter valid Password
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:30:13)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-11-24T15:11:48.969Z"}
