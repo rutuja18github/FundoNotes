@@ -14,7 +14,7 @@ export const createNewNote = async (req, res, next) => {
     res.status(HttpStatus.CREATED).json({
       code: HttpStatus.CREATED,
       data: data,
-      message: 'new note created successfully'
+      message: 'new note is created successfully'
     });
   } catch (error) {
     next(error);
