@@ -7,7 +7,7 @@ export const newUserRegister = async (body) => {
   // Check if this user already exisits
   const data = await User.find({ email: body.email });
   if (data.length !== 0) {
-    throw new Error('Already Exist EmailId');
+    throw new Error('Email id already exist');
   } else {
     const saltRounds = 10;
     const hashpassword = await bcrypt.hash(body.password,saltRounds)
@@ -26,12 +26,12 @@ export const login = async (body) => {
     console.log('Password',body.password);
     const result = await bcrypt.compare(body.password,data.password)
     if (result) {
-      var token = jwt.sign({ 'id' : data._id,'firstname': data.firstname, 'email' : data.email }, process.env.SECREAT_KEY);
+      var token = jwt.sign({ 'id' : data.id,'firstname': data.firstname, 'email' : data.email }, process.env.SECRET_KEY);
       return token;
     } else {
-      throw new Error('Enter invalid Password');
+      throw new Error('Enter Password is invalid');
     }
   } else {
-    throw new Error('Enter invalid EmailId');
+    throw new Error('Enter EmailId is invalid');
   }
 };
