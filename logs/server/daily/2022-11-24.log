@@ -1,140 +1,3 @@
-info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-23T15:59:49.957Z"}
-info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-23T15:59:55.661Z"}
-info: Connected to the database. {"timestamp":"2022-11-23T15:59:58.202Z"}
-info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-23T16:00:01.893Z"}
-info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-23T16:00:09.422Z"}
-info: Connected to the database. {"timestamp":"2022-11-23T16:00:11.970Z"}
-info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-23T16:00:21.135Z"}
-info: Connected to the database. {"timestamp":"2022-11-23T16:00:23.823Z"}
-info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-23T16:06:14.234Z"}
-info: Connected to the database. {"timestamp":"2022-11-23T16:06:19.434Z"}
-error: 
-    status - 500 
-    message - Error: Already Exist EmailId
-    at _callee$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:7:11)
-    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
-    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
-    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
-    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
-    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
-    url - /api/v1/users/Register 
-    method - POST 
-    IP - ::1
-   {"timestamp":"2022-11-23T16:09:33.281Z"}
-info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-23T16:41:46.316Z"}
-info: Connected to the database. {"timestamp":"2022-11-23T16:41:49.259Z"}
-error: 
-    status - 500 
-    message - TypeError: UserService.login is not a function
-    at _callee2$ (D:\NodeJS\FundoNotes\src\controllers\/user.controller.js:32:36)
-    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
-    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
-    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
-    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
-    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
-    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
-    at new Promise (<anonymous>)
-    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12
-    at login (D:\NodeJS\FundoNotes\src\controllers\/user.controller.js:30:20)
-    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:144:13)
-    at Route.dispatch (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:114:3)
-    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
-    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:284:15
-    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
-    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
-    at Function.handle (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:175:3)
-    at router (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:47:12)
-    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:328:13)
-    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
-    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
-    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
-    at Function.handle (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:175:3)
-    at router (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:47:12)
-    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:328:13)
-    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
-    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
-    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
-    at logger (D:\NodeJS\FundoNotes\node_modules\morgan\index.js:144:5)
-    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:328:13)
-    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
-    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
-    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
-    at D:\NodeJS\FundoNotes\node_modules\body-parser\lib\read.js:137:5
-    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
-    at invokeCallback (D:\NodeJS\FundoNotes\node_modules\raw-body\index.js:231:16)
-    at done (D:\NodeJS\FundoNotes\node_modules\raw-body\index.js:220:7)
-    at IncomingMessage.onEnd (D:\NodeJS\FundoNotes\node_modules\raw-body\index.js:280:7)
-    at IncomingMessage.emit (node:events:513:28)
-    at IncomingMessage.emit (node:domain:489:12)
-    at endReadableNT (node:internal/streams/readable:1359:12)
-    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
-    url - /api/v1/users/login 
-    method - POST 
-    IP - ::1
-   {"timestamp":"2022-11-23T16:44:57.878Z"}
-info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-23T16:45:44.118Z"}
-info: Connected to the database. {"timestamp":"2022-11-23T16:45:47.035Z"}
-error: 
-    status - 500 
-    message - Error: Enter Valid EmailId
-    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:25:11)
-    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
-    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
-    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
-    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
-    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
-    url - /api/v1/users/login 
-    method - POST 
-    IP - ::1
-   {"timestamp":"2022-11-23T16:46:04.295Z"}
-error: 
-    status - 500 
-    message - Error: Enter Valid EmailId
-    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:25:11)
-    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
-    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
-    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
-    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
-    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
-    url - /api/v1/users/login 
-    method - POST 
-    IP - ::1
-   {"timestamp":"2022-11-23T16:46:48.710Z"}
-error: 
-    status - 500 
-    message - Error: Enter valid Password
-    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:22:13)
-    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
-    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
-    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
-    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
-    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
-    url - /api/v1/users/login 
-    method - POST 
-    IP - ::1
-   {"timestamp":"2022-11-23T16:48:29.751Z"}
-error: 
-    status - 500 
-    message - Error: Enter Valid EmailId
-    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:25:11)
-    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
-    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
-    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
-    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
-    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
-    url - /api/v1/users/login 
-    method - POST 
-    IP - ::1
-   {"timestamp":"2022-11-23T16:48:49.911Z"}
 info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-24T02:45:56.014Z"}
 info: Connected to the database. {"timestamp":"2022-11-24T02:45:58.943Z"}
 error: 
@@ -304,3 +167,23 @@ info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-24T1
 info: Connected to the database. {"timestamp":"2022-11-24T14:49:33.590Z"}
 info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-24T14:54:07.496Z"}
 info: Connected to the database. {"timestamp":"2022-11-24T14:54:11.168Z"}
+<<<<<<< HEAD:logs/server/all.log
+=======
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-24T15:00:50.547Z"}
+info: Connected to the database. {"timestamp":"2022-11-24T15:00:54.306Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-11-24T15:10:48.942Z"}
+info: Connected to the database. {"timestamp":"2022-11-24T15:10:51.843Z"}
+error: 
+    status - 500 
+    message - Error: Enter valid Password
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:30:13)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-11-24T15:11:48.969Z"}
+>>>>>>> UserLogin:logs/server/daily/2022-11-24.log
