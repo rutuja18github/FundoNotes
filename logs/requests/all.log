@@ -94,3 +94,11 @@ info: ::1 - - [25/Nov/2022:12:58:00 +0000] "GET /api/v1/note/6380795a24fe585a1c4
 
 info: ::1 - - [25/Nov/2022:12:58:20 +0000] "GET /api/v1/note/6380b93291636b4c407bc2aa HTTP/1.1" 201 243 "-" "PostmanRuntime/7.29.2"
 
+info: ::1 - - [25/Nov/2022:13:07:19 +0000] "PUT /api/v1/note/6380b93291636b4c407bc2aa HTTP/1.1" 500 75 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [25/Nov/2022:13:08:05 +0000] "PUT /api/v1/note/6380b93291636b4c407bc2aa HTTP/1.1" 202 245 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [25/Nov/2022:13:11:05 +0000] "PUT /api/v1/note/6380b89887c0f233ecdfa24e HTTP/1.1" 202 255 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [25/Nov/2022:13:12:21 +0000] "PUT /api/v1/note/6380795a24fe585a1c4a3ad0 HTTP/1.1" 202 226 "-" "PostmanRuntime/7.29.2"
+
