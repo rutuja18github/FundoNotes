@@ -90,3 +90,7 @@ info: ::1 - - [25/Nov/2022:12:46:43 +0000] "POST /api/v1/note/create HTTP/1.1" 2
 
 info: ::1 - - [25/Nov/2022:12:47:19 +0000] "GET /api/v1/note/allNote HTTP/1.1" 201 571 "-" "PostmanRuntime/7.29.2"
 
+info: ::1 - - [25/Nov/2022:12:58:00 +0000] "GET /api/v1/note/6380795a24fe585a1c4a3ad0 HTTP/1.1" 201 236 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [25/Nov/2022:12:58:20 +0000] "GET /api/v1/note/6380b93291636b4c407bc2aa HTTP/1.1" 201 243 "-" "PostmanRuntime/7.29.2"
+
