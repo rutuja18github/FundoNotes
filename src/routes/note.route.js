@@ -17,4 +17,7 @@ router.get('/:_id', noteController.getNote);
 //route to update a note
 router.put('/:_id', noteController.updateNote);
 
+//route to delete a note
+router.delete('/:_id', noteController.deleteNote);
+
 export default router;
