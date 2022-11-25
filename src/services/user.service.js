@@ -1,5 +1,6 @@
 import User from '../models/user.model';
 import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken'
 
 //create new user
 export const newUserRegister = async (body) => {
@@ -25,11 +26,12 @@ export const login = async (body) => {
     console.log('Password',body.password);
     const result = await bcrypt.compare(body.password,data.password)
     if (result) {
-      return data;
+      var token = jwt.sign({ 'id' : data._id,'firstname': data.firstname, 'email' : data.email }, process.env.SECREAT_KEY);
+      return token;
     } else {
-      throw new Error('Enter valid Password');
+      throw new Error('Enter invalid Password');
     }
   } else {
-    throw new Error('Enter Valid EmailId');
+    throw new Error('Enter invalid EmailId');
   }
 };
