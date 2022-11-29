@@ -376,3 +376,245 @@ error:
     method - PUT 
     IP - ::1
    {"timestamp":"2022-11-25T13:07:19.792Z"}
+error: 
+    status - 500 
+    message - ReferenceError: Notes is not defined
+    at _callee6$ (D:\NodeJS\FundoNotes\src\services\/note.service.js:42:45)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at Object.archiveNote (D:\NodeJS\FundoNotes\src\services\/note.service.js:42:25)
+    at _callee6$ (D:\NodeJS\FundoNotes\src\controllers\/note.controller.js:108:36)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12
+    at archiveNote (D:\NodeJS\FundoNotes\src\controllers\/note.controller.js:106:26)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:284:15
+    at param (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:328:13)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:328:13)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at logger (D:\NodeJS\FundoNotes\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:328:13)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (D:\NodeJS\FundoNotes\node_modules\body-parser\lib\types\json.js:119:7) 
+    url - /api/v1/note/6380b89887c0f233ecdfa24e/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-11-28T08:15:38.091Z"}
+error: 
+    status - 500 
+    message - ReferenceError: Notes is not defined
+    at _callee6$ (D:\NodeJS\FundoNotes\src\services\/note.service.js:42:45)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at Object.archiveNote (D:\NodeJS\FundoNotes\src\services\/note.service.js:42:25)
+    at _callee6$ (D:\NodeJS\FundoNotes\src\controllers\/note.controller.js:108:36)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12
+    at archiveNote (D:\NodeJS\FundoNotes\src\controllers\/note.controller.js:106:26)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:284:15
+    at param (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:328:13)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:328:13)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at logger (D:\NodeJS\FundoNotes\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:328:13)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at D:\NodeJS\FundoNotes\node_modules\body-parser\lib\read.js:137:5 
+    url - /api/v1/note/6380b89887c0f233ecdfa24e/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-11-28T08:17:36.091Z"}
+error: 
+    status - 500 
+    message - ReferenceError: Notes is not defined
+    at _callee6$ (D:\NodeJS\FundoNotes\src\services\/note.service.js:42:45)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at Object.archiveNote (D:\NodeJS\FundoNotes\src\services\/note.service.js:42:25)
+    at _callee6$ (D:\NodeJS\FundoNotes\src\controllers\/note.controller.js:108:36)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12
+    at archiveNote (D:\NodeJS\FundoNotes\src\controllers\/note.controller.js:106:26)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:284:15
+    at param (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:328:13)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:328:13)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at logger (D:\NodeJS\FundoNotes\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:328:13)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at D:\NodeJS\FundoNotes\node_modules\body-parser\lib\read.js:137:5 
+    url - /api/v1/note/6380b89887c0f233ecdfa24e/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-11-28T11:32:35.955Z"}
+error: 
+    status - 500 
+    message - ReferenceError: Notes is not defined
+    at _callee6$ (D:\NodeJS\FundoNotes\src\services\/note.service.js:42:45)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at Object.archiveNote (D:\NodeJS\FundoNotes\src\services\/note.service.js:42:25)
+    at _callee6$ (D:\NodeJS\FundoNotes\src\controllers\/note.controller.js:108:36)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12
+    at archiveNote (D:\NodeJS\FundoNotes\src\controllers\/note.controller.js:106:26)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:284:15
+    at param (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:328:13)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:328:13)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at logger (D:\NodeJS\FundoNotes\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:328:13)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at D:\NodeJS\FundoNotes\node_modules\body-parser\lib\read.js:137:5 
+    url - /api/v1/note/6380b89887c0f233ecdfa24e/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-11-28T11:34:55.802Z"}
+error: 
+    status - 500 
+    message - ReferenceError: body is not defined
+    at _callee6$ (D:\NodeJS\FundoNotes\src\services\/note.service.js:50:7)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/6380b89887c0f233ecdfa24e/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-11-28T11:46:18.397Z"}

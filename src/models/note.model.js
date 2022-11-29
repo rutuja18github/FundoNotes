@@ -10,6 +10,10 @@ const noteSchema = new Schema(
     },
     color: {
       type: String, 
+    },
+    isArchive: {
+      type: Boolean,
+      default: false
     }
   },
   {

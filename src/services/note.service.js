@@ -37,3 +37,19 @@ export const deleteNote = async (_id,userID) => {
     const data = await Note.findOneAndDelete(_id,userID);
     return data;
 };
+
+//archive Note by _id
+export const archiveNote = async (_id) => {
+  const data = await Note.findByIdAndUpdate(
+    {
+      _id,
+    },
+    {
+      isArchive: true
+    },
+    {
+      new: true
+    }
+  );
+  return data;
+};
