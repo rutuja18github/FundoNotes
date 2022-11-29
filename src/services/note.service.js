@@ -41,10 +41,11 @@ export const deleteNote = async (_id,userID) => {
 };
 
 //archive Note by _id
-export const archiveNote = async (_id) => {
+export const archiveNote = async (_id,userID) => {
   const data = await Note.findByIdAndUpdate(
     {
-      _id,
+      _id:_id,
+      userID:userID
     },
     {
       isArchive: true
@@ -57,10 +58,11 @@ export const archiveNote = async (_id) => {
 };
 
 //trash Note by _id
-export const trashNote = async (_id) => {
+export const trashNote = async (_id,userID) => {
   const data = await Note.findByIdAndUpdate(
       {
-          _id
+        _id:_id,
+        userID:userID
       },
       {
           isTrash: true

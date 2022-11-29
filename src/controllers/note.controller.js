@@ -105,7 +105,7 @@ export const createNewNote = async (req, res, next) => {
  */
  export const archiveNote = async (req, res, next) => {
   try {
-    const data = await NoteService.archiveNote(req.params._id);
+    const data = await NoteService.archiveNote(req.params._id,req.body.userID);
     res.status(HttpStatus.ACCEPTED).json({
       code: HttpStatus.ACCEPTED,
       data: data,
@@ -124,7 +124,7 @@ export const createNewNote = async (req, res, next) => {
  */
  export const trashNote = async (req, res, next) => {
   try {
-      const data = await NoteService.trashNote(req.params._id);
+      const data = await NoteService.trashNote(req.params._id,req.body.userID);
       res.status(HttpStatus.ACCEPTED).json({
           code: HttpStatus.ACCEPTED,
           data: data,
