@@ -186,3 +186,9 @@ info: ::1 - - [28/Nov/2022:12:19:48 +0000] "POST /api/v1/note/create HTTP/1.1" 2
 
 info: ::1 - - [28/Nov/2022:12:20:00 +0000] "DELETE /api/v1/note/6384a76418f18d4840594051 HTTP/1.1" 200 60 "-" "PostmanRuntime/7.29.2"
 
+info: ::1 - - [29/Nov/2022:01:52:29 +0000] "PUT /api/v1/note/6384a76418f18d4840594051/trash HTTP/1.1" 202 258 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [29/Nov/2022:01:52:40 +0000] "PUT /api/v1/note/6384a76418f18d4840594051/trash HTTP/1.1" 202 258 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [29/Nov/2022:01:54:23 +0000] "PUT /api/v1/note/6384a76418f18d4840594051/trash HTTP/1.1" 202 257 "-" "PostmanRuntime/7.29.2"
+

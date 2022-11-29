@@ -14,6 +14,10 @@ const noteSchema = new Schema(
     isArchive: {
       type: Boolean,
       default: false
+    },
+    isTrash: {
+      type: Boolean,
+      default:false
     }
   },
   {

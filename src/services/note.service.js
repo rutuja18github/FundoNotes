@@ -53,3 +53,19 @@ export const archiveNote = async (_id) => {
   );
   return data;
 };
+
+//trash Note by _id
+export const trashNote = async (_id) => {
+  const data = await Note.findByIdAndUpdate(
+      {
+          _id
+      },
+      {
+          isTrash: true
+      },
+      {
+          new: true
+      }
+  );
+  return data;
+};
