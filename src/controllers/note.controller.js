@@ -29,11 +29,11 @@ export const createNewNote = async (req, res, next) => {
  */
  export const getAllNotes = async (req, res, next) => {
   try {
-    const data = await NoteService.getAllNotes(req.body);
+    const data = await NoteService.getAllNotes(req.body.userID);
     res.status(HttpStatus.CREATED).json({
       code: HttpStatus.CREATED,
       data: data,
-      message: 'new note is created successfully'
+      message: 'all notes are fetched successfully'
     });
   } catch (error) {
     next(error);

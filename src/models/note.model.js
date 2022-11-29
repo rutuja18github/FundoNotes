@@ -18,10 +18,14 @@ const noteSchema = new Schema(
     isTrash: {
       type: Boolean,
       default:false
+    },
+    userID:{
+      type: String
     }
   },
   {
-    timestamps: true
+    timestamps: true,
+    versionKey: false
   }
 );
 
