@@ -778,3 +778,119 @@ error:
     method - GET 
     IP - ::1
    {"timestamp":"2022-11-29T11:44:00.344Z"}
+error: 
+    status - 500 
+    message - ReferenceError: UserID is not defined
+    at _callee3$ (D:\NodeJS\FundoNotes\src\services\/note.service.js:17:52)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at Object.getNote (D:\NodeJS\FundoNotes\src\services\/note.service.js:16:21)
+    at _callee3$ (D:\NodeJS\FundoNotes\src\controllers\/note.controller.js:51:36)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12
+    at getNote (D:\NodeJS\FundoNotes\src\controllers\/note.controller.js:49:22)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:144:13)
+    at _callee$ (D:\NodeJS\FundoNotes\src\middlewares\/auth.middleware.js:27:5)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/6385f01c9c3f9d23f831302e 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-11-29T14:00:07.035Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ id: '6385f01c9c3f9d23f831302e', userID: undefined }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/6385f01c9c3f9d23f831302e 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-11-29T14:00:51.524Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ id: '6385f01c9c3f9d23f831302e', userID: 'chetan456@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/6385f01c9c3f9d23f831302e 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-11-29T14:02:31.033Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ id: '6385f01c9c3f9d23f831302e', userID: 'chetan456@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/6385f01c9c3f9d23f831302e 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-11-29T14:11:16.127Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ id: '6385f01c9c3f9d23f831302e', userID: 'chetan456@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/6385f01c9c3f9d23f831302e 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-11-29T14:13:14.525Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ id: '6385f01c9c3f9d23f831302e', userID: 'chetan456@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/6385f01c9c3f9d23f831302e 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-11-29T14:15:33.695Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ id: '6385f01c9c3f9d23f831302e', userID: 'chetan456@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/6385f01c9c3f9d23f831302e 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-11-29T14:16:48.637Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ id: '6385f01c9c3f9d23f831302e', userID: 'chetan456@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/6385f01c9c3f9d23f831302e 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-11-29T14:18:56.928Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ id: '6385f01c9c3f9d23f831302e', userID: 'chetan456@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/6385f01c9c3f9d23f831302e 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-11-29T14:21:42.593Z"}

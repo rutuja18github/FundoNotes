@@ -252,3 +252,25 @@ info: ::1 - - [29/Nov/2022:13:48:07 +0000] "POST /api/v1/note/create HTTP/1.1" 2
 
 info: ::1 - - [29/Nov/2022:13:48:17 +0000] "GET /api/v1/note/allNote HTTP/1.1" 201 507 "-" "PostmanRuntime/7.29.2"
 
+info: ::1 - - [29/Nov/2022:14:00:07 +0000] "GET /api/v1/note/6385f01c9c3f9d23f831302e HTTP/1.1" 500 56 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [29/Nov/2022:14:00:51 +0000] "GET /api/v1/note/6385f01c9c3f9d23f831302e HTTP/1.1" 500 175 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [29/Nov/2022:14:02:31 +0000] "GET /api/v1/note/6385f01c9c3f9d23f831302e HTTP/1.1" 500 187 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [29/Nov/2022:14:11:16 +0000] "GET /api/v1/note/6385f01c9c3f9d23f831302e HTTP/1.1" 500 187 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [29/Nov/2022:14:13:14 +0000] "GET /api/v1/note/6385f01c9c3f9d23f831302e HTTP/1.1" 500 187 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [29/Nov/2022:14:15:33 +0000] "GET /api/v1/note/6385f01c9c3f9d23f831302e HTTP/1.1" 500 187 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [29/Nov/2022:14:16:48 +0000] "GET /api/v1/note/6385f01c9c3f9d23f831302e HTTP/1.1" 500 187 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [29/Nov/2022:14:18:56 +0000] "GET /api/v1/note/6385f01c9c3f9d23f831302e HTTP/1.1" 500 187 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [29/Nov/2022:14:21:42 +0000] "GET /api/v1/note/6385f01c9c3f9d23f831302e HTTP/1.1" 500 187 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [29/Nov/2022:14:34:10 +0000] "PUT /api/v1/note/6385f01c9c3f9d23f831302e HTTP/1.1" 202 283 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [29/Nov/2022:14:37:32 +0000] "DELETE /api/v1/note/6385f01c9c3f9d23f831302e HTTP/1.1" 200 60 "-" "PostmanRuntime/7.29.2"
+
