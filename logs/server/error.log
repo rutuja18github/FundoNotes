@@ -901,3 +901,43 @@ error:
       method - PUT 
       IP - ::1
      {"timestamp":"2022-11-29T15:08:38.881Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ id: '63860d936f713d2b740c2052', userID: 'chetan456@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/63860d936f713d2b740c2052 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-11-30T02:33:43.246Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/63860d936f713d2b740c2052/archive 
+      method - PUT 
+      IP - ::1
+     {"timestamp":"2022-11-30T02:34:05.976Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ id: '63860d936f713d2b740c2052', userID: 'chetan456@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/63860d936f713d2b740c2052 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-11-30T05:28:33.494Z"}
+error: 
+    status - 500 
+    message - Error: Enter Password is invalid
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:32:13)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-11-30T11:21:14.080Z"}
