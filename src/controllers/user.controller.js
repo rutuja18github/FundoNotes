@@ -40,5 +40,23 @@ export const registerNewUser = async (req, res, next) => {
   }
 };
 
+/**
+ * Controller to reset password
+ * @param  {object} req - request object
+ * @param {object} res - response object
+ * @param {Function} next
+ */
+ export const ResetPassword = async (req, res, next) => {
+  try {
+    const data = await UserService.ResetPassword(req.body);
+    res.status(HttpStatus.CREATED).json({
+      code: HttpStatus.CREATED,
+      data:data,
+      message: 'new password created successfully'
+    });
+  } catch (error) {
+    next(error);
+  }
+};
 
 

@@ -10,5 +10,7 @@ router.post('/Register', newUserValidator, userController.registerNewUser);
 //route to login user
 router.post('/login',userController.login);
 
+//route for reset password
+router.put('/ResetPassword', resetAuth, userController.ResetPassword);
 
 export default router;
