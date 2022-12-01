@@ -275,7 +275,7 @@ describe('UserRegistration', () => {
     });
   }); 
   
-  //Test case for user registration with valid data
+//Test case for user registration with valid data
 describe('UserRegistration', () => {
   const userDetails={
     "firstname":"Ritika",
@@ -293,4 +293,72 @@ describe('UserRegistration', () => {
       });
     });
   });
+
+//Test case for login with invalid email
+describe('UserLogin', () => {
+  const loginDetails={
+    "email":"ritz@gmail.com",
+    "password":"Ritz@1234"
+  }
+  it('Given unregistered user login details should not get logged in', (done) => {
+    request(app)
+      .post('/api/v1/users/login')
+      .send(loginDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+    });
+  });
+
+//Test case for login with invalid password
+describe('UserLogin', () => {
+  const loginDetails={
+    "email":"shraddha123@gmail.com",
+    "password":"shar1234"
+  }
+  it('Given invalid password login details should not get logged in', (done) => {
+    request(app)
+      .post('/api/v1/users/login')
+      .send(loginDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+    });
+  });
+
+//Test case for login with password data not found
+describe('UserLogin', () => {
+  const loginDetails={
+    "email":"Sivkapoor@gmail.com",
+    "password":""
+  }
+  it('Given invalid password login details should not get logged in', (done) => {
+    request(app)
+      .post('/api/v1/users/login')
+      .send(loginDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+    });
+  });
+
+//10.Test case for login with password data not found
+/*describe('UserLogin', () => {
+  const loginDetails={
+    "email":"Sivkapoor@gmail.com",
+    "password":"Shivansh@12"
+  }
+  it('Given invalid password login details should not get logged in', (done) => {
+    request(app)
+      .post('/api/v1/users/login')
+      .send(loginDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(201);
+        done();
+      });
+    });
+  });*/
 });
