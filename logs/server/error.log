@@ -1081,3 +1081,136 @@ error:
     method - POST 
     IP - ::1
    {"timestamp":"2022-12-01T07:49:48.750Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T08:33:36.203Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T08:33:36.219Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T08:33:36.233Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be at least 8 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T08:33:36.251Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T08:33:36.271Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T08:39:47.263Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T08:39:47.276Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T08:39:47.291Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be at least 8 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T08:39:47.310Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T08:39:47.326Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T08:39:47.342Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T08:39:47.357Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "shital2312345" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-01T12:20:11.689Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "sHital2312345" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-01T12:20:26.933Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "sHital@s" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-01T12:23:06.262Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "shital1@s" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-01T12:23:25.040Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-01T12:25:23.361Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" with value "valmik" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-01T12:27:15.755Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-01T12:27:26.432Z"}

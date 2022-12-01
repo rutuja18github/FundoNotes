@@ -33,9 +33,8 @@ describe('User APIs Test', () => {
         .end((err, res) => {
           expect(res.statusCode).to.be.equal(200);
           expect(res.body.data).to.be.an('array');
-
           done();
         });
     });
-  });
+  }); 
 });

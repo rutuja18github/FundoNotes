@@ -352,3 +352,55 @@ info: ::1 - - [01/Dec/2022:07:49:48 +0000] "POST /api/v1/users/login HTTP/1.1" 5
 
 info: ::1 - - [01/Dec/2022:07:49:54 +0000] "POST /api/v1/users/login HTTP/1.1" 200 274 "-" "PostmanRuntime/7.29.2"
 
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:08:24:10 +0000] "POST /api/v1/users/Register HTTP/1.1" 201 325 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:08:33:36 +0000] "POST /api/v1/users/Register HTTP/1.1" 201 325 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:08:33:36 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 90 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:08:33:36 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:08:33:36 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 66 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:08:33:36 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:08:33:36 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 74 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:08:39:47 +0000] "POST /api/v1/users/Register HTTP/1.1" 201 325 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:08:39:47 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 90 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:08:39:47 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:08:39:47 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 66 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:08:39:47 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:08:39:47 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 103 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:08:39:47 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 74 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:08:39:47 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 75 "-" "node-superagent/3.8.3"
+
+info: ::1 - - [01/Dec/2022:11:36:35 +0000] "POST /api/v1/users/Register HTTP/1.1" 201 324 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:12:20:11 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 168 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:12:20:26 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 168 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:12:20:42 +0000] "POST /api/v1/users/Register HTTP/1.1" 201 324 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:12:23:06 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 174 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:12:23:25 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 175 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:12:23:47 +0000] "POST /api/v1/users/Register HTTP/1.1" 201 324 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:12:25:23 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 103 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:12:27:15 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 124 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:12:27:26 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 90 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:12:27:36 +0000] "POST /api/v1/users/Register HTTP/1.1" 201 323 "-" "PostmanRuntime/7.29.2"
+
