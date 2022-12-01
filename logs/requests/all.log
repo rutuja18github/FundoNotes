@@ -404,3 +404,268 @@ info: ::1 - - [01/Dec/2022:12:27:26 +0000] "POST /api/v1/users/Register HTTP/1.1
 
 info: ::1 - - [01/Dec/2022:12:27:36 +0000] "POST /api/v1/users/Register HTTP/1.1" 201 323 "-" "PostmanRuntime/7.29.2"
 
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:38:39 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 177 "-" "node-superagent/3.8.3"
+
+error: uncaughtException: expected 500 to equal 201
+AssertionError: expected 500 to equal 201
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:55:38)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Thu Dec 01 2022 18:08:39 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":201,"message":"expected 500 to equal 201","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:55:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1323403},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19362536,"external":20487468,"heapTotal":124375040,"heapUsed":97563272,"rss":163348480},"pid":9532,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 500 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:55:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","trace":[{"column":38,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":55,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:42:07 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 90 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:42:07 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:42:07 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 66 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:42:07 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 172 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:42:07 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 103 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:42:07 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 74 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:42:07 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 75 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:47:33 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 90 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:47:33 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:47:33 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 66 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:47:33 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 172 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:47:33 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 103 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:47:33 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 74 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:47:33 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 75 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:49:33 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 90 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:49:33 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:49:33 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 66 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:49:33 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 172 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:49:33 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 103 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:49:33 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 74 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:49:33 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 75 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:58:55 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 90 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:58:55 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:58:55 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 66 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:58:55 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 172 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:58:55 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 103 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:58:55 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 74 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:12:58:55 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 75 "-" "node-superagent/3.8.3"
+
+info: ::1 - - [01/Dec/2022:13:00:42 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 121 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:13:03:05 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 123 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:13:03:17 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 123 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:13:03:26 +0000] "POST /api/v1/users/Register HTTP/1.1" 201 317 "-" "PostmanRuntime/7.29.2"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:07:08 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 90 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:07:08 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:07:08 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 66 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:07:08 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 172 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:07:08 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 103 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:07:08 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 74 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:07:08 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 75 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:13:37 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 90 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:13:37 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:13:37 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 66 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:13:37 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 172 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:13:37 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 103 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:13:37 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 74 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:13:37 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 75 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:15:30 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 90 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:15:30 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:15:30 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 66 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:15:30 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 172 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:15:30 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 103 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:15:30 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 74 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:15:30 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 75 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:15:36 +0000] "POST /api/v1/users/Register HTTP/1.1" 201 323 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:20:58 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 90 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:20:59 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 122 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:20:59 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:20:59 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 66 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:20:59 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 172 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:20:59 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 103 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:20:59 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 74 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:20:59 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 75 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:21:09 +0000] "POST /api/v1/users/Register HTTP/1.1" 201 323 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:24:39 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 90 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:24:40 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 122 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:24:40 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:24:40 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:24:40 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 66 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:24:40 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 172 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:24:40 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 103 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:24:40 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 74 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:24:40 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 75 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:24:50 +0000] "POST /api/v1/users/Register HTTP/1.1" 201 323 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:29:09 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 90 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:29:09 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 122 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:29:09 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:29:20 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 93 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:29:20 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 66 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:29:20 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 172 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:29:20 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 103 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:29:20 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 175 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:29:20 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 175 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:29:20 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 175 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:29:20 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 175 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:29:20 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 74 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:29:20 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 75 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:29:24 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 57 "-" "node-superagent/3.8.3"
+
+error: uncaughtException: expected 500 to equal 201
+AssertionError: expected 500 to equal 201
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:291:38)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Thu Dec 01 2022 18:59:24 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":201,"message":"expected 500 to equal 201","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:291:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1326449},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18331295,"external":19454351,"heapTotal":91172864,"heapUsed":83739400,"rss":132005888},"pid":12664,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 500 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:291:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","trace":[{"column":38,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":291,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:33:04 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 90 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:33:04 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 122 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:33:04 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:33:14 +0000] "POST /api/v1/users/Register HTTP/1.1" 201 324 "-" "node-superagent/3.8.3"
+
+error: uncaughtException: expected 201 to equal 500
+AssertionError: expected 201 to equal 500
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:101:38)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Thu Dec 01 2022 19:03:14 GMT+0530 (India Standard Time)","error":{"actual":201,"expected":500,"message":"expected 201 to equal 500","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 201 to equal 500\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:101:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1326678},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19294725,"external":20419677,"heapTotal":124665856,"heapUsed":96825896,"rss":166600704},"pid":1824,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 201 to equal 500\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:101:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","trace":[{"column":38,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":101,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:35:40 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 90 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:35:41 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 122 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:35:41 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:35:41 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 121 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:35:41 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 66 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:35:41 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 172 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:35:41 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 103 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:35:41 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 175 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:35:41 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 175 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:35:41 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 175 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:35:41 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 175 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:35:41 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 74 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:35:41 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 75 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:36:02 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 90 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:36:02 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 122 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:36:02 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 89 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:36:02 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 121 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:36:02 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 66 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:36:02 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 172 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:36:02 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 103 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:36:02 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 175 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:36:02 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 175 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:36:02 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 175 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:36:02 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 175 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:36:02 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 74 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:36:02 +0000] "POST /api/v1/users/Register HTTP/1.1" 500 75 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [01/Dec/2022:13:36:12 +0000] "POST /api/v1/users/Register HTTP/1.1" 201 323 "-" "node-superagent/3.8.3"
+

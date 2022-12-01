@@ -1214,3 +1214,831 @@ error:
     method - POST 
     IP - ::1
    {"timestamp":"2022-12-01T12:27:26.432Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@1234" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:38:39.434Z"}
+error: uncaughtException: expected 500 to equal 201
+AssertionError: expected 500 to equal 201
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:55:38)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Thu Dec 01 2022 18:08:39 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":201,"message":"expected 500 to equal 201","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:55:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1323403},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19354320,"external":20479212,"heapTotal":124375040,"heapUsed":97470112,"rss":162553856},"pid":9532,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 500 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:55:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-01T12:38:39.502Z","trace":[{"column":38,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":55,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:42:07.820Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:42:07.841Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:42:07.856Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "Rutu@1" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:42:07.872Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:42:07.884Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:42:07.894Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:42:07.907Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:47:33.407Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:47:33.431Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:47:33.444Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "Rutu@1" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:47:33.462Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:47:33.473Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:47:33.483Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:47:33.496Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:49:33.519Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:49:33.541Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:49:33.555Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "Rutu@1" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:49:33.568Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:49:33.578Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:49:33.588Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:49:33.597Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:58:55.460Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:58:55.482Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:58:55.499Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "Rutu@1" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:58:55.516Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:58:55.532Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:58:55.546Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T12:58:55.564Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" with value "vim" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-01T13:00:42.926Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" with value "vimal" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-01T13:03:05.538Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" with value "valmik" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-01T13:03:17.718Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:07:08.460Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:07:08.492Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:07:08.511Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "Rutu@1" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:07:08.528Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:07:08.545Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:07:08.564Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:07:08.585Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:13:37.490Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:13:37.522Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:13:37.541Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "Rutu@1" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:13:37.564Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:13:37.584Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:13:37.601Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:13:37.617Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:15:30.398Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:15:30.447Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:15:30.477Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "Rutu@1" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:15:30.498Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:15:30.517Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:15:30.599Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:15:30.614Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:20:58.984Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" with value "ritu" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:20:59.024Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:20:59.041Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:20:59.057Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "Rutu@1" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:20:59.078Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:20:59.093Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:20:59.107Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:20:59.123Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:24:39.987Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" with value "ritu" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:24:40.024Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:24:40.044Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:24:40.062Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:24:40.079Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "Rutu@1" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:24:40.097Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:24:40.117Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:24:40.142Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:24:40.159Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:29:09.912Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" with value "ritu" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:29:09.941Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:29:09.959Z"}
+error: 
+    status - 500 
+    message - MongooseError: Operation `users.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:198:23)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7) 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:29:19.997Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:29:20.025Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "Rutu@1" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:29:20.043Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:29:20.062Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:29:20.075Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:29:20.087Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:29:20.099Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:29:20.113Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:29:20.130Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:29:20.144Z"}
+error: 
+    status - 500 
+    message - Error: Email id already exist
+    at _callee$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:11:11)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:29:24.925Z"}
+error: uncaughtException: expected 500 to equal 201
+AssertionError: expected 500 to equal 201
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:291:38)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Thu Dec 01 2022 18:59:24 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":201,"message":"expected 500 to equal 201","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:291:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1326449},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18323079,"external":19446095,"heapTotal":91172864,"heapUsed":83658160,"rss":131219456},"pid":12664,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 500 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:291:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-01T13:29:24.978Z","trace":[{"column":38,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":291,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:33:04.300Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" with value "ritu" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:33:04.347Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:33:04.375Z"}
+error: uncaughtException: expected 201 to equal 500
+AssertionError: expected 201 to equal 500
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:101:38)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Thu Dec 01 2022 19:03:14 GMT+0530 (India Standard Time)","error":{"actual":201,"expected":500,"message":"expected 201 to equal 500","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 201 to equal 500\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:101:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1326678},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19286509,"external":20411421,"heapTotal":124665856,"heapUsed":96745184,"rss":165855232},"pid":1824,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 201 to equal 500\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:101:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-01T13:33:14.561Z","trace":[{"column":38,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":101,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:35:40.970Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" with value "ritu" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:35:41.004Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:35:41.024Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" with value "pati" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:35:41.041Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:35:41.060Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "Rutu@1" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:35:41.077Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:35:41.098Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:35:41.114Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:35:41.133Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:35:41.150Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:35:41.167Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:35:41.182Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:35:41.193Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:36:02.306Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" with value "ritu" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:36:02.336Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:36:02.353Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" with value "pati" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:36:02.370Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:36:02.391Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "Rutu@1" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:36:02.407Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:36:02.424Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:36:02.437Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:36:02.461Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:36:02.478Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:36:02.495Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:36:02.509Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-01T13:36:02.523Z"}

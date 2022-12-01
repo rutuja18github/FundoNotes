@@ -26,15 +26,271 @@ describe('User APIs Test', () => {
     done();
   });
 
-  describe('GET /users', () => {
-    it('should return empty array', (done) => {
-      request(app)
-        .get('/api/v1/users')
-        .end((err, res) => {
-          expect(res.statusCode).to.be.equal(200);
-          expect(res.body.data).to.be.an('array');
-          done();
-        });
+
+
+//Testcase for invalid firstname having less than 4 characters
+describe('UserRegistration', () => {
+  const userDetails={
+    "firstname":"Rit",
+    "lastname":"Patil",
+    "email":"rutujapatil@gmail.com",
+    "password":"Rutuja@1234"
+  }
+  it('Given user registration details should not be saved in database', (done) => {
+    request(app)
+      .post('/api/v1/users/Register')
+      .send(userDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+    });
+  });
+
+//Testcase for invalid firstname,first letter is not capital
+describe('UserRegistration', () => {
+  const userDetails={
+    "firstname":"ritu",
+    "lastname":"Patil",
+    "email":"rutujapatil@gmail.com",
+    "password":"Rutuja@1234"
+  }
+  it('Given user registration details should not be saved in database', (done) => {
+    request(app)
+      .post('/api/v1/users/Register')
+      .send(userDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+    });
+  });
+
+//Testcase for invalid lastname,having less than 4 characters
+describe('UserRegistration', () => {
+  const userDetails={
+      "firstname":"Rutuja",
+      "lastname":"Pat",
+      "email":"rutujapatil@gmail.com",
+      "password":"Rutuja@1234"
+  }
+  it('Given user registration details should not be saved in database', (done) => {
+    request(app)
+      .post('/api/v1/users/Register')
+      .send(userDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+    });
+  });
+
+//Testcase for invalid lastname,,first letter is not capital
+describe('UserRegistration', () => {
+  const userDetails={
+      "firstname":"Rutuja",
+      "lastname":"pati",
+      "email":"rutujapatil@gmail.com",
+      "password":"Rutuja@1234"
+  }
+  it('Given user registration details should not be saved in database', (done) => {
+    request(app)
+      .post('/api/v1/users/Register')
+      .send(userDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+    });
+  });
+
+//Testcase for invalid email
+describe('UserRegistration', () => {
+  const userDetails={
+      "firstname":"Rutuja",
+      "lastname":"Patil",
+      "email":"rutujagmail.com",
+      "password":"Rutuja@1234"
+  }
+  it('Given user registration details should not be saved in database', (done) => {
+    request(app)
+      .post('/api/v1/users/Register')
+      .send(userDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+    });
+  });
+
+//Testcase for invalid password,password should be minimum 8 characters long
+describe('UserRegistration', () => {
+  const userDetails={
+      "firstname":"Rutuja",
+      "lastname":"Patil",
+      "email":"rutujapatil@gmail.com",
+      "password":"Rutu@1"
+  }
+  it('Given user registration details should not be saved in database', (done) => {
+    request(app)
+      .post('/api/v1/users/Register')
+      .send(userDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+    });
+  });
+
+//Testcase for invalid password,password should be maximum 15 characters long
+describe('UserRegistration', () => {
+  const userDetails={
+      "firstname":"Rutuja",
+      "lastname":"Patil",
+      "email":"rutujapatil@gmail.com",
+      "password":"Rutujapatil@1456"
+  }
+  it('Given user registration details should not be saved in database', (done) => {
+    request(app)
+      .post('/api/v1/users/Register')
+      .send(userDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+    });
+  });
+
+//Testcase for invalid password,password not containing capital letter
+describe('UserRegistration', () => {
+  const userDetails={
+      "firstname":"Rutuja",
+      "lastname":"Patil",
+      "email":"rutujapatil@gmail.com",
+      "password":"rutuja@11"
+  }
+  it('Given user registration details should not be saved in database', (done) => {
+    request(app)
+      .post('/api/v1/users/Register')
+      .send(userDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+    });
+  });
+
+//Testcase for invalid password,password not containing small letter
+describe('UserRegistration', () => {
+  const userDetails={
+      "firstname":"Rutuja",
+      "lastname":"Patil",
+      "email":"rutujapatil@gmail.com",
+      "password":"rutuja@11"
+  }
+  it('Given user registration details should not be saved in database', (done) => {
+    request(app)
+      .post('/api/v1/users/Register')
+      .send(userDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+    });
+  });
+
+//Testcase for invalid password,password not containing special character
+describe('UserRegistration', () => {
+  const userDetails={
+      "firstname":"Rutuja",
+      "lastname":"Patil",
+      "email":"rutujapatil@gmail.com",
+      "password":"rutuja@11"
+  }
+  it('Given user registration details should not be saved in database', (done) => {
+    request(app)
+      .post('/api/v1/users/Register')
+      .send(userDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+    });
+  });
+
+  //Testcase for invalid password,password not contain number
+describe('UserRegistration', () => {
+  const userDetails={
+      "firstname":"Rutuja",
+      "lastname":"Patil",
+      "email":"rutujapatil@gmail.com",
+      "password":"rutuja@11"
+  }
+  it('Given user registration details should not be saved in database', (done) => {
+    request(app)
+      .post('/api/v1/users/Register')
+      .send(userDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+    });
+  });
+
+//Testcase for data not found
+describe('UserRegistration', () => {
+  const userDetails={
+    "firstname":"Rutuja",
+    "lastname":"Patil",
+    "email":"rutujapatil@gmail.com",
+    "password":""
+  }
+  it('Given user registration details should not be saved in database', (done) => {
+    request(app)
+      .post('/api/v1/users/Register')
+      .send(userDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+    });
+  });  
+
+//Testcase for all fields empty
+describe('UserRegistration', () => {
+  const userDetails={
+    "firstname":"",
+    "lastname":"",
+    "email":"",
+    "password":""
+  }
+  it('Given user registration details should not be saved in database', (done) => {
+    request(app)
+      .post('/api/v1/users/Register')
+      .send(userDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
     });
   }); 
+  
+  //Test case for user registration with valid data
+describe('UserRegistration', () => {
+  const userDetails={
+    "firstname":"Ritika",
+    "lastname":"Patil",
+    "email":"Ritika123@gmail.com",
+    "password":"ritiKa@1234"
+  }
+  it('Given user registration details should be saved in database', (done) => {
+    request(app)
+      .post('/api/v1/users/Register')
+      .send(userDetails)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(201);
+        done();
+      });
+    });
+  });
 });
