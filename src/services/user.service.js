@@ -1,6 +1,7 @@
 import User from '../models/user.model';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken'
+import {sendMail} from '../utils/user.util'  ;
 
 //create new user
 export const newUserRegister = async (body) => {
@@ -49,4 +50,18 @@ export const ResetPassword = async (body) => {
     }
   );
   return data;
+};
+
+//Forgot password
+export const forgotPassword = async (body) => {
+  // To check email id is register or not in database
+  const data = await User.findOne({ email: body.email });
+  if (data !== null) {
+    var passwordToken = jwt.sign({email: data.email, id: data._id}, process.env.SECRET_KEY);
+    const result = await sendMail(data.email);
+    return passwordToken;
+  }
+  else {
+    throw new Error("Invalid Email ID");
+  }
 };

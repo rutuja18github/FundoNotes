@@ -312,3 +312,43 @@ info: ::1 - - [30/Nov/2022:11:21:14 +0000] "POST /api/v1/users/login HTTP/1.1" 5
 
 info: ::1 - - [30/Nov/2022:11:21:39 +0000] "POST /api/v1/users/login HTTP/1.1" 200 274 "-" "PostmanRuntime/7.29.2"
 
+info: ::1 - - [30/Nov/2022:12:55:02 +0000] "POST /api/v1/users/login HTTP/1.1" 500 60 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [30/Nov/2022:12:55:09 +0000] "POST /api/v1/users/login HTTP/1.1" 500 60 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [30/Nov/2022:12:55:16 +0000] "POST /api/v1/users/login HTTP/1.1" 500 60 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [30/Nov/2022:12:55:45 +0000] "POST /api/v1/users/login HTTP/1.1" 500 60 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [30/Nov/2022:12:56:58 +0000] "POST /api/v1/users/Register HTTP/1.1" 201 323 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [30/Nov/2022:12:57:46 +0000] "POST /api/v1/users/login HTTP/1.1" 200 274 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [30/Nov/2022:12:58:31 +0000] "PUT /api/v1/users/ResetPassword HTTP/1.1" 201 330 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [30/Nov/2022:12:58:43 +0000] "POST /api/v1/users/login HTTP/1.1" 500 60 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [30/Nov/2022:12:58:48 +0000] "POST /api/v1/users/login HTTP/1.1" 200 274 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:02:02:25 +0000] "POST /api/v1/users/forgotpassword HTTP/1.1" 202 278 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:03:12:55 +0000] "PUT /api/v1/users/ResetPassword HTTP/1.1" 201 326 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:07:46:40 +0000] "POST /api/v1/users/login HTTP/1.1" 500 60 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:07:47:00 +0000] "POST /api/v1/users/login HTTP/1.1" 200 274 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:07:47:15 +0000] "PUT /api/v1/users/ResetPassword HTTP/1.1" 201 326 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:07:47:31 +0000] "POST /api/v1/users/login HTTP/1.1" 500 60 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:07:47:39 +0000] "POST /api/v1/users/login HTTP/1.1" 200 274 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:07:47:57 +0000] "POST /api/v1/users/forgotpassword HTTP/1.1" 202 278 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:07:49:37 +0000] "PUT /api/v1/users/ResetPassword HTTP/1.1" 201 326 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:07:49:48 +0000] "POST /api/v1/users/login HTTP/1.1" 500 60 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [01/Dec/2022:07:49:54 +0000] "POST /api/v1/users/login HTTP/1.1" 200 274 "-" "PostmanRuntime/7.29.2"
+

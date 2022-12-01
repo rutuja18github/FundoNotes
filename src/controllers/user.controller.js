@@ -52,11 +52,28 @@ export const registerNewUser = async (req, res, next) => {
     res.status(HttpStatus.CREATED).json({
       code: HttpStatus.CREATED,
       data:data,
-      message: 'new password created successfully'
+      message: 'password updated successfully'
     });
   } catch (error) {
     next(error);
   }
 };
 
-
+/**
+ * Controller to forgot password
+ * @param  {object} req - request object
+ * @param {object} res - response object
+ * @param {Function} next
+ */
+export const forgotPassword= async (req,res,next) => {
+  try {
+    const data = await UserService.forgotPassword(req.body);
+    res.status(HttpStatus.ACCEPTED).json({
+      code: HttpStatus.ACCEPTED,
+      data: data,
+      message: 'forget password successfully done,check email for token'
+    });
+  } catch (error) {
+    next(error);
+  }
+};
