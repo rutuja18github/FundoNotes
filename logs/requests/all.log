@@ -1135,3 +1135,13 @@ info: ::ffff:127.0.0.1 - - [02/Dec/2022:12:21:03 +0000] "POST /api/v1/note/creat
 
 info: ::ffff:127.0.0.1 - - [02/Dec/2022:12:21:03 +0000] "POST /api/v1/note/create HTTP/1.1" 500 71 "-" "node-superagent/3.8.3"
 
+info: ::ffff:127.0.0.1 - - [02/Dec/2022:12:37:53 +0000] "POST /api/v1/users/Register HTTP/1.1" 201 323 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [02/Dec/2022:12:37:54 +0000] "POST /api/v1/users/login HTTP/1.1" 200 274 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [02/Dec/2022:12:37:54 +0000] "POST /api/v1/note/create HTTP/1.1" 201 325 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [02/Dec/2022:12:37:54 +0000] "GET /api/v1/note/allNote HTTP/1.1" 201 329 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [02/Dec/2022:12:37:54 +0000] "GET /api/v1/note/allNote HTTP/1.1" 400 56 "-" "node-superagent/3.8.3"
+

@@ -3393,3 +3393,10 @@ error:
     method - POST 
     IP - ::ffff:127.0.0.1
    {"timestamp":"2022-12-02T12:21:03.823Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/allNote 
+      method - GET 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-02T12:37:54.854Z"}
