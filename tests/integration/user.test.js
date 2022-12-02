@@ -30,7 +30,7 @@ describe('User APIs Test', () => {
   var noteID;
 
   //Testcase for invalid firstname having less than 4 characters
-  /*describe('UserRegistration', () => {
+  describe('UserRegistration', () => {
     const userDetails = {
       "firstname": "Rit",
       "lastname": "Patil",
@@ -274,7 +274,7 @@ describe('User APIs Test', () => {
           done();
         });
     });
-  });*/
+  });
 
   //Test case for user registration with valid data
   describe('UserRegistration', () => {
@@ -313,7 +313,7 @@ describe('User APIs Test', () => {
     });
   });
   //Test case for login with invalid email
-  /*describe('UserLogin', () => {
+  describe('UserLogin', () => {
     const loginDetails = {
       "email": "ritz@gmail.com",
       "password": "Ritz@1234"
@@ -361,7 +361,7 @@ describe('User APIs Test', () => {
           done();
         });
     });
-  });*/
+  });
   // Test case for create note
   describe('createNote', () => {
     const noteBody = {
@@ -382,7 +382,7 @@ describe('User APIs Test', () => {
   });
 
   //Test case for create note without authorization
- /* describe('createNote', () => {
+  describe('createNote', () => {
     it('Given creating note without authorization should not saved in database', (done) => {
       const noteBody = {
         title: "Java Basics",
@@ -459,30 +459,30 @@ describe('User APIs Test', () => {
     });
   });
 
-//Test case for get note by ID with authorization
-describe(' Get note by id', () => {
-  it('Given valid authorization get note by id successfully done should return status code 201', (done) => {
-    request(app)
-      .get(`/api/v1/note/${noteID}`)
-      .set('authorization', `Bearer ${token}`)
-      .end((err, res) => {
-        expect(res.statusCode).to.be.equal(201);
-        done();
-      });
+  //Test case for get note by ID with authorization
+  describe(' Get note by id', () => {
+    it('Given valid authorization get note by id successfully done should return status code 201', (done) => {
+      request(app)
+        .get(`/api/v1/note/${noteID}`)
+        .set('authorization', `Bearer ${token}`)
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(201);
+          done();
+        });
+    });
   });
-});
 
-// 16 - Test case for get note by ID without authorization
-describe(' Get note by id', () => {
-  it('Given invalid authorization get note by id successfully done should return status code 400', (done) => {
-    request(app)
-      .get(`/api/v1/note/${noteID}`)
-      .end((err, res) => {
-        expect(res.statusCode).to.be.equal(400);
-        done();
-      });
+  // 16 - Test case for get note by ID without authorization
+  describe(' Get note by id', () => {
+    it('Given invalid authorization get note by id successfully done should return status code 400', (done) => {
+      request(app)
+        .get(`/api/v1/note/${noteID}`)
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(400);
+          done();
+        });
+    });
   });
-});*/
 
   //Test case for update note by ID with authorization
   describe(' Update note by id ', () => {
@@ -548,6 +548,81 @@ describe(' Get note by id', () => {
     it('Given invalid id deleting note by id failed should return status code 500', (done) => {
       request(app)
         .delete(`/api/v1/note/shdfkjhllakood`)
+        .set('authorization', `Bearer ${token}`)
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(500);
+          done();
+        });
+    });
+  });
+
+  //Test case for archive note by ID with authorization
+  describe(' Archive note by id with authorization ', () => {
+    it('Given valid id archive note by ID successfully complete should return status code 202', (done) => {
+      request(app)
+        .put(`/api/v1/note/${noteID}/archive`)
+        .set('authorization', `Bearer ${token}`)
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(202);
+          done();
+        });
+    });
+  });
+
+  //Test case for archive note by ID without authorization
+  describe(' Archive note by id with authorization ', () => {
+    it('Given valid id archive note by ID successfully complete should return status code 400', (done) => {
+      request(app)
+        .put(`/api/v1/note/${noteID}/archive`)
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(400);
+          done();
+        });
+    });
+  });
+
+  //Test case for archive note by ID with invalid id
+  describe(' Archive note by id with authorization ', () => {
+    it('Given valid id archive note by ID successfully complete should return status code 500', (done) => {
+      request(app)
+        .put(`/api/v1/note/sdhgfisefgiaw/archive`)
+        .set('authorization', `Bearer ${token}`)
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(500);
+          done();
+        });
+    });
+  });
+
+  //Test case for trash note by ID with authorization
+  describe('Trash note by id', () => {
+    it('Given valid id trash note by ID successfully complete should return status code 202', (done) => {
+      request(app)
+        .put(`/api/v1/note/${noteID}/trash`)
+        .set('authorization', `Bearer ${token}`)
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(202);
+          done();
+        });
+    });
+  });
+
+  //Test case for trash note by ID without authorization
+  describe('Trash note by id', () => {
+    it('Given valid id trash note by ID successfully complete should return status code 500', (done) => {
+      request(app)
+        .put(`/api/v1/note/jshkfh,afa/trash`)
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(400);
+          done();
+        });
+    });
+  });
+  //Test case for trash note by ID with invalid id
+  describe('Trash note by id', () => {
+    it('Given valid id trash note by ID successfully complete should return status code 500', (done) => {
+      request(app)
+        .put(`/api/v1/note/jshkfh,afa/trash`)
         .set('authorization', `Bearer ${token}`)
         .end((err, res) => {
           expect(res.statusCode).to.be.equal(500);
