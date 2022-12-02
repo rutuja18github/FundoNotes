@@ -26,7 +26,8 @@ describe('User APIs Test', () => {
     done();
   });
 
-
+  var token;
+  var noteID;
 
 //Testcase for invalid firstname having less than 4 characters
 describe('UserRegistration', () => {
@@ -294,6 +295,23 @@ describe('UserRegistration', () => {
     });
   });
 
+  //Test case for login with valid user
+describe('UserLogin', () => {
+  const loginDetails={
+    "email":"Ritika123@gmail.com",
+    "password":"ritiKa@1234"
+  }
+  it('Given email and password login details should get logged in', (done) => {
+    request(app)
+      .post('/api/v1/users/login')
+      .send(loginDetails)
+      .end((err, res) => {
+        token=res.body.data;
+        expect(res.statusCode).to.be.equal(200);
+        done();
+      });
+    });
+  });
 //Test case for login with invalid email
 describe('UserLogin', () => {
   const loginDetails={
@@ -344,21 +362,75 @@ describe('UserLogin', () => {
       });
     });
   });
+  // Test case for create note
+  describe('createNote', () => {
+    const noteBody = {
+      title: "Java Script",
+      description: "js is is a lightweight, interpreted language"
+    }
+    it('Given note details should be saved in database', (done) => {
+      request(app)
+        .post('/api/v1/note/create')
+        .set('authorization', `Bearer ${token}`)
+        .send(noteBody)
+        .end((err, res) => {
+          noteID = res.body.data._id;
+          expect(res.statusCode).to.be.equal(201);
+          done();
+        });
+    });
+  });
 
-//10.Test case for login with password data not found
-/*describe('UserLogin', () => {
-  const loginDetails={
-    "email":"Sivkapoor@gmail.com",
-    "password":"Shivansh@12"
-  }
-  it('Given invalid password login details should not get logged in', (done) => {
+//Test case for create note without authorization
+describe('createNote', () => {
+  it('Given creating note without authorization should not saved in database', (done) => {
+    const noteBody = {
+      title: "Java Basics",
+      description: "Concept"
+    }
     request(app)
-      .post('/api/v1/users/login')
-      .send(loginDetails)
+      .post('/api/v1/note/create')
+      .send(noteBody)
       .end((err, res) => {
-        expect(res.statusCode).to.be.equal(201);
+        expect(res.statusCode).to.be.equal(400);
         done();
       });
     });
-  });*/
+  });
+
+//Test case for invalid note description
+describe('createNote', () => {
+  it('Given creating notes with invalid note title status should return 500', (done) => {
+    const noteBody = {
+      title: "Java Basics",
+      description: ""
+    }
+    request(app)
+      .post('/api/v1/note/create')
+      .set('authorization', `Bearer ${token}`)
+      .send(noteBody)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+  });
+});
+
+//Test case for invalid note title
+describe('Notes-Create', () => {
+  it('Given creating notes with invalid note title status should return 500', (done) => {
+    const noteBody = {
+      title: "",
+      description: "Good Morning"
+    }
+    request(app)
+      .post('/api/v1/note/create')
+      .set('authorization', `Bearer ${token}`)
+      .send(noteBody)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(500);
+        done();
+      });
+    });
+  });
 });

@@ -2597,3 +2597,799 @@ error:
     method - POST 
     IP - ::ffff:127.0.0.1
    {"timestamp":"2022-12-01T13:59:04.243Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:21:08.070Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" with value "ritu" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:21:08.112Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:21:08.132Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" with value "pati" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:21:08.154Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:21:08.173Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "Rutu@1" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:21:08.193Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:21:08.218Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:21:08.239Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:21:08.261Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:21:08.279Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:21:08.297Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:21:08.316Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:21:08.335Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:26:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:21:18.224Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:26:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:21:18.522Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:26:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:21:18.845Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:23:08.862Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" with value "ritu" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:23:08.899Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:23:08.924Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" with value "pati" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:23:08.948Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:23:08.969Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "Rutu@1" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:23:09.054Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:23:09.074Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:23:09.096Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:23:09.116Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:23:09.134Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:23:09.151Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:23:09.167Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:23:09.181Z"}
+error: 
+      status - 13297
+      message - db already exists with different case already have: [FundotestDB] trying to create [FundoTestDB] 
+      url - /api/v1/users/Register 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-02T03:23:13.919Z"}
+error: 
+    status - 500 
+    message - RangeError: Invalid status code: 13297
+    at new NodeError (node:internal/errors:393:5)
+    at ServerResponse.writeHead (node:_http_server:343:11)
+    at ServerResponse.writeHead (D:\NodeJS\FundoNotes\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:334:8)
+    at write_ (node:_http_outgoing:867:9)
+    at ServerResponse.end (node:_http_outgoing:977:5)
+    at ServerResponse.send (D:\NodeJS\FundoNotes\node_modules\express\lib\response.js:232:10)
+    at ServerResponse.json (D:\NodeJS\FundoNotes\node_modules\express\lib\response.js:278:15)
+    at appErrorHandler (D:\NodeJS\FundoNotes\src\middlewares\/error.middleware.js:36:26)
+    at Layer.handle_error (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:326:13)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:646:15
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:265:14)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:646:15
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:265:14)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:136:14)
+    at _callee$ (D:\NodeJS\FundoNotes\src\controllers\/user.controller.js:20:5)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.throw (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _throw (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:23:13.937Z"}
+error: uncaughtException: expected 500 to equal 201
+AssertionError: expected 500 to equal 201
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:291:38)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Fri Dec 02 2022 08:53:13 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":201,"message":"expected 500 to equal 201","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:291:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1376478},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18746004,"external":19870336,"heapTotal":122630144,"heapUsed":96396736,"rss":163106816},"pid":5412,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 500 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:291:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-02T03:23:13.983Z","trace":[{"column":38,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":291,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:24:42.051Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" with value "ritu" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:24:42.098Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:24:42.118Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" with value "pati" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:24:42.137Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:24:42.156Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "Rutu@1" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:24:42.177Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:24:42.278Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:24:42.333Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:24:42.365Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:24:42.391Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:24:42.412Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:24:42.427Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:24:42.445Z"}
+error: 
+      status - 13297
+      message - db already exists with different case already have: [FundotestDB] trying to create [FundoTestDB] 
+      url - /api/v1/users/Register 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-02T03:24:46.697Z"}
+error: 
+    status - 500 
+    message - RangeError: Invalid status code: 13297
+    at new NodeError (node:internal/errors:393:5)
+    at ServerResponse.writeHead (node:_http_server:343:11)
+    at ServerResponse.writeHead (D:\NodeJS\FundoNotes\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:334:8)
+    at write_ (node:_http_outgoing:867:9)
+    at ServerResponse.end (node:_http_outgoing:977:5)
+    at ServerResponse.send (D:\NodeJS\FundoNotes\node_modules\express\lib\response.js:232:10)
+    at ServerResponse.json (D:\NodeJS\FundoNotes\node_modules\express\lib\response.js:278:15)
+    at appErrorHandler (D:\NodeJS\FundoNotes\src\middlewares\/error.middleware.js:36:26)
+    at Layer.handle_error (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:326:13)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:646:15
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:265:14)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:646:15
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:265:14)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:136:14)
+    at _callee$ (D:\NodeJS\FundoNotes\src\controllers\/user.controller.js:20:5)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.throw (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _throw (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:24:46.708Z"}
+error: uncaughtException: expected 500 to equal 201
+AssertionError: expected 500 to equal 201
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:291:38)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Fri Dec 02 2022 08:54:46 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":201,"message":"expected 500 to equal 201","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:291:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1376571},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18917792,"external":20042124,"heapTotal":122892288,"heapUsed":96106744,"rss":163573760},"pid":8848,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 500 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:291:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-02T03:24:46.763Z","trace":[{"column":38,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":291,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:39:58.780Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:39:58.826Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:39:58.851Z"}
+error: 
+      status - 13297
+      message - db already exists with different case already have: [FundotestDB] trying to create [FundoTestDB] 
+      url - /api/v1/users/Register 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-02T03:40:08.862Z"}
+error: 
+    status - 500 
+    message - RangeError: Invalid status code: 13297
+    at new NodeError (node:internal/errors:393:5)
+    at ServerResponse.writeHead (node:_http_server:343:11)
+    at ServerResponse.writeHead (D:\NodeJS\FundoNotes\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:334:8)
+    at write_ (node:_http_outgoing:867:9)
+    at ServerResponse.end (node:_http_outgoing:977:5)
+    at ServerResponse.send (D:\NodeJS\FundoNotes\node_modules\express\lib\response.js:232:10)
+    at ServerResponse.json (D:\NodeJS\FundoNotes\node_modules\express\lib\response.js:278:15)
+    at appErrorHandler (D:\NodeJS\FundoNotes\src\middlewares\/error.middleware.js:36:26)
+    at Layer.handle_error (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:326:13)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:280:10)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:646:15
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:265:14)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:646:15
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:265:14)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:136:14)
+    at _callee$ (D:\NodeJS\FundoNotes\src\controllers\/user.controller.js:20:5)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.throw (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _throw (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:40:08.876Z"}
+error: uncaughtException: expected 500 to equal 201
+AssertionError: expected 500 to equal 201
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:291:38)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Fri Dec 02 2022 09:10:08 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":201,"message":"expected 500 to equal 201","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:291:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1377493},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19075137,"external":20200049,"heapTotal":124936192,"heapUsed":97667856,"rss":166129664},"pid":13924,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 500 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:291:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-02T03:40:08.936Z","trace":[{"column":38,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":291,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:43:18.977Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:43:19.032Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:43:19.060Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:26:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:43:29.281Z"}
+error: uncaughtException: expected 500 to equal 201
+AssertionError: expected 500 to equal 201
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:359:38)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Fri Dec 02 2022 09:13:29 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":201,"message":"expected 500 to equal 201","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:359:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1377693},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18313564,"external":19436580,"heapTotal":91172864,"heapUsed":84838904,"rss":130842624},"pid":27040,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 500 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:359:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-02T03:43:29.318Z","trace":[{"column":38,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":359,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:26:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:55:54.203Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:26:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:55:54.616Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:26:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:55:54.988Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:56:33.562Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" with value "ritu" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:56:33.595Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:56:33.610Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastname" with value "pati" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:56:33.626Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:56:33.644Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "Rutu@1" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:56:33.660Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be less than or equal to 15 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:56:33.677Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:56:33.691Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:56:33.709Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:56:33.723Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "rutuja@11" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:56:33.740Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:56:33.755Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is not allowed to be empty 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:56:33.771Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:26:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:56:44.768Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:26:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:56:45.140Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:26:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T03:56:45.476Z"}
+error: uncaughtException: Cannot read properties of undefined (reading '_id')
+TypeError: Cannot read properties of undefined (reading '_id')
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:379:34)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Fri Dec 02 2022 17:22:04 GMT+0530 (India Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1407008},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18481891,"external":19606223,"heapTotal":124203008,"heapUsed":89111176,"rss":164237312},"pid":5252,"uid":null,"version":"v18.12.0"},"stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:379:34)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-02T11:52:04.469Z","trace":[{"column":34,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":379,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: uncaughtException: Cannot read properties of undefined (reading '_id')
+TypeError: Cannot read properties of undefined (reading '_id')
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:379:34)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Fri Dec 02 2022 17:23:23 GMT+0530 (India Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1407087},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":20004724,"external":21129056,"heapTotal":123625472,"heapUsed":100782120,"rss":165249024},"pid":13004,"uid":null,"version":"v18.12.0"},"stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:379:34)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-02T11:53:23.047Z","trace":[{"column":34,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":379,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: uncaughtException: expected 404 to equal 201
+AssertionError: expected 404 to equal 201
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:380:40)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Fri Dec 02 2022 17:25:30 GMT+0530 (India Standard Time)","error":{"actual":404,"expected":201,"message":"expected 404 to equal 201","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 404 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:380:40)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1407215},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":20005968,"external":21130300,"heapTotal":123625472,"heapUsed":101098096,"rss":164724736},"pid":2988,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 404 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:380:40)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-02T11:55:30.761Z","trace":[{"column":40,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":380,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: uncaughtException: expected 404 to equal 400
+AssertionError: expected 404 to equal 400
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:397:38)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Fri Dec 02 2022 17:40:46 GMT+0530 (India Standard Time)","error":{"actual":404,"expected":400,"message":"expected 404 to equal 400","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 404 to equal 400\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:397:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1408130},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18534060,"external":19658392,"heapTotal":124203008,"heapUsed":92434328,"rss":163848192},"pid":23020,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 404 to equal 400\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:397:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-02T12:10:46.394Z","trace":[{"column":38,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":397,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: uncaughtException: expected 404 to equal 400
+AssertionError: expected 404 to equal 400
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:397:38)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Fri Dec 02 2022 17:42:10 GMT+0530 (India Standard Time)","error":{"actual":404,"expected":400,"message":"expected 404 to equal 400","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 404 to equal 400\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:397:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1408214},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18510534,"external":19634953,"heapTotal":124203008,"heapUsed":93236000,"rss":164098048},"pid":17976,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 404 to equal 400\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:397:38)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-02T12:12:10.425Z","trace":[{"column":38,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":397,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/create 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-02T12:12:39.133Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/create 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-02T12:19:59.064Z"}
+error: 
+    status - 500 
+    message - ValidationError: "description" is not allowed to be empty 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T12:19:59.076Z"}
+error: 
+    status - 500 
+    message - ValidationError: "title" is not allowed to be empty 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T12:19:59.086Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/create 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-02T12:21:03.795Z"}
+error: 
+    status - 500 
+    message - ValidationError: "description" is not allowed to be empty 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T12:21:03.810Z"}
+error: 
+    status - 500 
+    message - ValidationError: "title" is not allowed to be empty 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T12:21:03.823Z"}
