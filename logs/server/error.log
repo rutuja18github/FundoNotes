@@ -3400,3 +3400,10 @@ error:
       method - GET 
       IP - ::ffff:127.0.0.1
      {"timestamp":"2022-12-02T12:37:54.854Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/6389f5c3b8728969084ed438 
+      method - GET 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-02T12:55:31.935Z"}

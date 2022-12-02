@@ -436,7 +436,7 @@ describe('User APIs Test', () => {
 
   //Test case for get all notes with authorization
   describe('Get all note', () => {
-    it('invalid authorization getting all notes successfully should return status code 201', (done) => {
+    it('Given invalid authorization getting all notes successfully should return status code 201', (done) => {
       request(app)
         .get('/api/v1/note/allNote')
         .set('authorization', `Bearer ${token}`)
@@ -458,4 +458,29 @@ describe('User APIs Test', () => {
         });
     });
   });
+
+//Test case for get note by ID with authorization
+describe(' Get note by id', () => {
+  it('Given valid authorization get note by id successfully done should return status code 201', (done) => {
+    request(app)
+      .get(`/api/v1/note/${noteID}`)
+      .set('authorization', `Bearer ${token}`)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(201);
+        done();
+      });
+  });
+});
+
+// 16 - Test case for get note by ID without authorization
+describe(' Get note by id', () => {
+  it('Given invalid authorization get note by id successfully done should return status code 400', (done) => {
+    request(app)
+      .get(`/api/v1/note/${noteID}`)
+      .end((err, res) => {
+        expect(res.statusCode).to.be.equal(400);
+        done();
+      });
+  });
+});
 });
