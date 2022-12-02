@@ -3407,3 +3407,96 @@ error:
       method - GET 
       IP - ::ffff:127.0.0.1
      {"timestamp":"2022-12-02T12:55:31.935Z"}
+error: uncaughtException: expected 200 to equal 500
+AssertionError: expected 200 to equal 500
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:555:40)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Fri Dec 02 2022 18:42:33 GMT+0530 (India Standard Time)","error":{"actual":200,"expected":500,"message":"expected 200 to equal 500","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 200 to equal 500\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:555:40)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1411838},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18684194,"external":19808526,"heapTotal":123678720,"heapUsed":92592528,"rss":163979264},"pid":25016,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 200 to equal 500\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:555:40)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-02T13:12:33.977Z","trace":[{"column":40,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":555,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: uncaughtException: expected 202 to equal 201
+AssertionError: expected 202 to equal 201
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:499:40)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Fri Dec 02 2022 18:44:22 GMT+0530 (India Standard Time)","error":{"actual":202,"expected":201,"message":"expected 202 to equal 201","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 202 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:499:40)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1411947},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18319092,"external":19442108,"heapTotal":92483584,"heapUsed":87155600,"rss":132608000},"pid":2940,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 202 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:499:40)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-02T13:14:22.704Z","trace":[{"column":40,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":499,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: uncaughtException: expected 202 to equal 201
+AssertionError: expected 202 to equal 201
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:499:40)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Fri Dec 02 2022 18:45:45 GMT+0530 (India Standard Time)","error":{"actual":202,"expected":201,"message":"expected 202 to equal 201","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 202 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:499:40)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1412030},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18528133,"external":19653045,"heapTotal":124465152,"heapUsed":93766680,"rss":165003264},"pid":11208,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 202 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:499:40)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-02T13:15:45.786Z","trace":[{"column":40,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":499,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: uncaughtException: expected 202 to equal 201
+AssertionError: expected 202 to equal 201
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:499:40)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Fri Dec 02 2022 18:47:19 GMT+0530 (India Standard Time)","error":{"actual":202,"expected":201,"message":"expected 202 to equal 201","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 202 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:499:40)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1412124},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19129058,"external":20253970,"heapTotal":125509632,"heapUsed":98720880,"rss":166182912},"pid":11668,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 202 to equal 201\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:499:40)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-02T13:17:19.779Z","trace":[{"column":40,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":499,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ id: '6389fb4fbcc4115ef8ccd770', userID: 'chetan456@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/6389fb4fbcc4115ef8ccd770 
+    method - DELETE 
+    IP - ::1
+   {"timestamp":"2022-12-02T13:27:09.849Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/6389fe71a40dd451d4b2dbce 
+      method - PUT 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-02T13:32:34.247Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/6389fe71a40dd451d4b2dbce 
+      method - DELETE 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-02T13:32:34.550Z"}
+error: uncaughtException: expected 200 to equal 500
+AssertionError: expected 200 to equal 500
+    at Test.<anonymous> (D:\NodeJS\FundoNotes\tests\integration\/user.test.js:553:40)
+    at Test.assert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (D:\NodeJS\FundoNotes\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at emitCloseNT (node:net:1880:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Fri Dec 02 2022 19:02:34 GMT+0530 (India Standard Time)","error":{"actual":200,"expected":500,"message":"expected 200 to equal 500","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 200 to equal 500\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:553:40)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1413039},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\NodeJS\\FundoNotes\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=50000","tests/**/*.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19045617,"external":20170529,"heapTotal":128397312,"heapUsed":100383200,"rss":169390080},"pid":20948,"uid":null,"version":"v18.12.0"},"stack":"AssertionError: expected 200 to equal 500\n    at Test.<anonymous> (D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js:553:40)\n    at Test.assert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:627:28)\n    at Server.emit (node:events:513:28)\n    at emitCloseNT (node:net:1880:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-02T13:32:34.894Z","trace":[{"column":40,"file":"D:\\NodeJS\\FundoNotes\\tests\\integration\\/user.test.js","function":null,"line":553,"method":null,"native":false},{"column":6,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":627,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":513,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1880,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/6389feaa05db8f2c086440bb 
+      method - PUT 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-02T13:33:31.033Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/6389feaa05db8f2c086440bb 
+      method - DELETE 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-02T13:33:31.357Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'shdfkjhllakood', userID: 'Ritika123@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/shdfkjhllakood 
+    method - DELETE 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-02T13:33:31.375Z"}

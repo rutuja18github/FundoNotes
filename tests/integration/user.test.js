@@ -30,7 +30,7 @@ describe('User APIs Test', () => {
   var noteID;
 
   //Testcase for invalid firstname having less than 4 characters
-  describe('UserRegistration', () => {
+  /*describe('UserRegistration', () => {
     const userDetails = {
       "firstname": "Rit",
       "lastname": "Patil",
@@ -274,7 +274,7 @@ describe('User APIs Test', () => {
           done();
         });
     });
-  });
+  });*/
 
   //Test case for user registration with valid data
   describe('UserRegistration', () => {
@@ -313,7 +313,7 @@ describe('User APIs Test', () => {
     });
   });
   //Test case for login with invalid email
-  describe('UserLogin', () => {
+  /*describe('UserLogin', () => {
     const loginDetails = {
       "email": "ritz@gmail.com",
       "password": "Ritz@1234"
@@ -361,7 +361,7 @@ describe('User APIs Test', () => {
           done();
         });
     });
-  });
+  });*/
   // Test case for create note
   describe('createNote', () => {
     const noteBody = {
@@ -382,7 +382,7 @@ describe('User APIs Test', () => {
   });
 
   //Test case for create note without authorization
-  describe('createNote', () => {
+ /* describe('createNote', () => {
     it('Given creating note without authorization should not saved in database', (done) => {
       const noteBody = {
         title: "Java Basics",
@@ -482,5 +482,77 @@ describe(' Get note by id', () => {
         done();
       });
   });
-});
+});*/
+
+  //Test case for update note by ID with authorization
+  describe(' Update note by id ', () => {
+    it('Given authorization updating note by ID should successful and return status code 202', (done) => {
+      const noteBody = {
+        title: "Javascript concept",
+        description: "Basic"
+      }
+      request(app)
+        .put(`/api/v1/note/${noteID}`)
+        .set('authorization', `Bearer ${token}`)
+        .send(noteBody)
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(202);
+          done();
+        });
+    });
+  });
+
+  // 18 - Test case for update note by ID without authorization
+  describe(' Update note by id ', () => {
+    it('Given authorization updating note by ID should failed andreturn status code 400', (done) => {
+      const noteBody = {
+        title: "Javascript concept",
+        description: "js is object-oriented language with first-class functions"
+      }
+      request(app)
+        .put(`/api/v1/note/${noteID}`)
+        .send(noteBody)
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(400);
+          done();
+        });
+    });
+  });
+
+  // 21 - Test case for delete note by ID with authorization
+  describe(' Delete note by id ', () => {
+    it('Given authorization delete note by ID should successful and return status code 200', (done) => {
+      request(app)
+        .delete(`/api/v1/note/${noteID}`)
+        .set('authorization', `Bearer ${token}`)
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(200);
+          done();
+        });
+    });
+  });
+
+  //Test case for delete note by ID without authorization
+  describe('delete note by id', () => {
+    it('Given authorization updating note by ID should fail and return status code 400', (done) => {
+      request(app)
+        .delete(`/api/v1/note/${noteID}`)
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(400);
+          done();
+        });
+    });
+  });
+  //Test case for delete note by invalid ID with authorization
+  describe(' Update note by id with authorization ', () => {
+    it('Given invalid id deleting note by id failed should return status code 500', (done) => {
+      request(app)
+        .delete(`/api/v1/note/shdfkjhllakood`)
+        .set('authorization', `Bearer ${token}`)
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(500);
+          done();
+        });
+    });
+  });
 });
