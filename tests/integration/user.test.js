@@ -49,7 +49,7 @@ describe('User APIs Test', () => {
   });
 
   //Testcase for invalid firstname,first letter is not capital
-  describe('UserRegistration', () => {
+  /*describe('UserRegistration', () => {
     const userDetails = {
       "firstname": "ritu",
       "lastname": "Patil",
@@ -274,7 +274,7 @@ describe('User APIs Test', () => {
           done();
         });
     });
-  });
+  });*/
 
   //Test case for user registration with valid data
   describe('UserRegistration', () => {

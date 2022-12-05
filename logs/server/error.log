@@ -3563,3 +3563,145 @@ error:
     method - PUT 
     IP - ::ffff:127.0.0.1
    {"timestamp":"2022-12-02T13:51:51.608Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" length must be at least 4 characters long 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-05T03:33:31.852Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:26:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-05T03:33:42.529Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:26:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-05T03:33:42.862Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:26:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-05T03:33:43.194Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/create 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-05T03:33:43.544Z"}
+error: 
+    status - 500 
+    message - ValidationError: "description" is not allowed to be empty 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-05T03:33:43.559Z"}
+error: 
+    status - 500 
+    message - ValidationError: "title" is not allowed to be empty 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-05T03:33:43.574Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/allNote 
+      method - GET 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-05T03:33:43.883Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/638d6697827d920e5833fe43 
+      method - GET 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-05T03:33:44.256Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/638d6697827d920e5833fe43 
+      method - PUT 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-05T03:33:44.588Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/638d6697827d920e5833fe43 
+      method - DELETE 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-05T03:33:44.927Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'shdfkjhllakood', userID: 'Ritika123@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/shdfkjhllakood 
+    method - DELETE 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-05T03:33:44.948Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/638d6697827d920e5833fe43/archive 
+      method - PUT 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-05T03:33:45.284Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'sdhgfisefgiaw', userID: 'Ritika123@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/sdhgfisefgiaw/archive 
+    method - PUT 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-05T03:33:45.297Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/jshkfh,afa/trash 
+      method - PUT 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2022-12-05T03:33:45.632Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'jshkfh,afa', userID: 'Ritika123@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/jshkfh,afa/trash 
+    method - PUT 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-12-05T03:33:45.647Z"}
