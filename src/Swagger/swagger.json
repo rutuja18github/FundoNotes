@@ -76,6 +76,73 @@
                     }
                 }
             }
+        },
+        "/users/forgotpassword": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "description": "Forgot Password",
+                "parameters": [
+                    {
+                        "name": "Forgot password",
+                        "in": "body",
+                        "description": "Enter valid user email-id ",
+                        "schema": {
+                            "$ref": "#/definitions/ForgotPassword"
+                        },
+                        "required": true
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "202": {
+                        "description": "Reset link send successfully"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/users/ResetPassword": {
+            "put": {
+                "tags": [
+                    "User"
+                ],
+                "description": "Reset Password",
+                "parameters": [
+                    {
+                        "name": "Reset password",
+                        "in": "body",
+                        "description": "Enter new password  ",
+                        "schema": {
+                            "$ref": "#/definitions/ResetPassword"
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "202": {
+                        "description": "Password updated successfully"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    },
+                    "400": {
+                        "description": "Invalid authorization token"
+                    }
+                },
+                "security": [
+                    {
+                        "JWT": []
+                    }
+                ]
+            }
         }
     },
     "definitions": {
@@ -106,7 +173,30 @@
                     "type": "string"
                 }
             }
+        },
+        "forgetPassword": {
+            "type": "object",
+            "properties": {
+                "email": {
+                 "type": "string"
+                }
+            }
+        },
+        "resetPassword": {
+            "type": "object",
+            "properties": {
+              "password": {
+                 "type": "string"
+                }
+            }
+        }   
+    },
+    "securityDefinitions": {
+        "JWT": {
+        "type": "apiKey",
+        "name": "authorization",
+        "in": "header"
         }
-    }
+    }    
 }
         
