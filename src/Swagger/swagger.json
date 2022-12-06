@@ -218,9 +218,87 @@
                     {
                         "name": "id",
                         "in": "path",
+                        "description": "Enter note id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Note fetch successfully"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    },
+                    "400": {
+                        "description": "Invalid authorization token"
+                    }
+                },
+                "security": [
+                    {
+                        "JWT": []
+                    }
+                ]
+            },
+            "put": {
+                "tags": [
+                    "Notes"
+                ],
+                "description": "Get note by id",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
                         "type": "string",
                         "description": "Enter note id",
                         "required": true
+                    },
+
+                    {
+                        "name": "Update Note",
+                        "in": "body",
+                        "description": "Update note for a particular user by their id",
+                        "required": false,
+                        "schema": {
+                            "$ref": "#/definitions/newNote"
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Note fetch successfully"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    },
+                    "400": {
+                        "description": "Invalid authorization token"
+                    }
+                },
+                "security": [
+                    {
+                        "JWT": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "Notes"
+                ],
+                "description": "Get note by id",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Enter note id",
+                        "required": true,
+                        "type": "string"
                     }
                 ],
                 "produces": [

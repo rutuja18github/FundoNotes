@@ -3823,3 +3823,13 @@ error:
     method - GET 
     IP - ::1
    {"timestamp":"2022-12-06T12:26:52.955Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: '{id}', userID: 'nikiSingh@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/%7Bid%7D 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-06T13:30:52.308Z"}
