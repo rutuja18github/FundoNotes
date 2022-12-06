@@ -321,6 +321,78 @@
                     }
                 ]
             }
+        },
+        "/note/{id}/archive": {
+            "put": {
+                "tags": [
+                    "Notes"
+                ],
+                "description": "Archive note by id",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Enter note id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "202": {
+                        "description": "Note updated to archive successfully"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    },
+                    "400": {
+                        "description": "Invalid authorization token"
+                    }
+                },
+                "security": [
+                    {
+                        "JWT": []
+                    }
+                ]
+            }
+        },
+        "/note/{id}/trash": {
+            "put": {
+                "tags": [
+                    "Notes"
+                ],
+                "description": "Trash note by id",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Enter note id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "202": {
+                        "description": "Note updated to archive successfully"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    },
+                    "400": {
+                        "description": "Invalid authorization token"
+                    }
+                },
+                "security": [
+                    {
+                        "JWT": []
+                    }
+                ]
+            }
         }
     },
     "definitions": {
