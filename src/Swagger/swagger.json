@@ -143,6 +143,70 @@
                     }
                 ]
             }
+        },
+        "/note/create": {
+            "post": {
+                "tags": [
+                    "Notes"
+                ],
+                "description": "Creating new note",
+                "parameters": [
+                    {
+                        "name": "Creat Note",
+                        "in": "body",
+                        "description": "Enter valid note details",
+                        "schema": {
+                            "$ref": "#/definitions/CreateNote"
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Note created successfully"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    },
+                    "400": {
+                        "description": "Invalid authorization token"
+                    }
+                },
+                "security": [
+                    {
+                        "JWT": []
+                    }
+                ]
+            }
+        },
+        "/note/allNote": {
+            "get": {
+                "tags": [
+                    "Notes"
+                ],
+                "description": "Get all notes",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "All notes fetch successfully"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    },
+                    "400": {
+                        "description": "Invalid authorization token"
+                    }
+                },
+                "security": [
+                    {
+                        "JWT": []
+                    }
+                ]
+            }
         }
     },
     "definitions": {
@@ -187,6 +251,20 @@
             "properties": {
               "password": {
                  "type": "string"
+                }
+            }
+        },
+        "CreateNote": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "color": {
+                    "type": "string"
                 }
             }
         }   

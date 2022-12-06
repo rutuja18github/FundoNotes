@@ -3705,3 +3705,121 @@ error:
     method - PUT 
     IP - ::ffff:127.0.0.1
    {"timestamp":"2022-12-05T03:33:45.647Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: invalid signature
+    at D:\NodeJS\FundoNotes\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (D:\NodeJS\FundoNotes\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.verify (D:\NodeJS\FundoNotes\node_modules\jsonwebtoken\verify.js:94:10)
+    at _callee2$ (D:\NodeJS\FundoNotes\src\middlewares\/auth.middleware.js:51:29)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12
+    at resetAuth (D:\NodeJS\FundoNotes\src\middlewares\/auth.middleware.js:41:24)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:114:3) 
+    url - /api/v1/users/ResetPassword 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-06T10:54:06.463Z"}
+error: uncaughtException: D:\NodeJS\FundoNotes\src\swagger\swagger.json: Unexpected token } in JSON at position 6238
+SyntaxError: D:\NodeJS\FundoNotes\src\swagger\swagger.json: Unexpected token } in JSON at position 6238
+    at parse (<anonymous>)
+    at Object.Module._extensions..json (node:internal/modules/cjs/loader:1227:39)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (D:\NodeJS\FundoNotes\src\/index.js:18:1)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._compile (D:\NodeJS\FundoNotes\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Object.newLoader [as .js] (D:\NodeJS\FundoNotes\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.runMain (node:internal/modules/run_main:81:12)
+    at Object.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\node\src\_babel-node.ts:214:12)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14) {"date":"Tue Dec 06 2022 16:36:32 GMT+0530 (India Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1749876},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19302450,"external":20984219,"heapTotal":118312960,"heapUsed":91106248,"rss":158511104},"pid":10456,"uid":null,"version":"v18.12.0"},"stack":"SyntaxError: D:\\NodeJS\\FundoNotes\\src\\swagger\\swagger.json: Unexpected token } in JSON at position 6238\n    at parse (<anonymous>)\n    at Object.Module._extensions..json (node:internal/modules/cjs/loader:1227:39)\n    at Module.load (node:internal/modules/cjs/loader:1037:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:878:12)\n    at Module.require (node:internal/modules/cjs/loader:1061:19)\n    at require (node:internal/modules/cjs/helpers:103:18)\n    at Object.<anonymous> (D:\\NodeJS\\FundoNotes\\src\\/index.js:18:1)\n    at Module._compile (node:internal/modules/cjs/loader:1159:14)\n    at Module._compile (D:\\NodeJS\\FundoNotes\\node_modules\\pirates\\lib\\index.js:136:24)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)\n    at Object.newLoader [as .js] (D:\\NodeJS\\FundoNotes\\node_modules\\pirates\\lib\\index.js:141:7)\n    at Module.load (node:internal/modules/cjs/loader:1037:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:878:12)\n    at Function.runMain (node:internal/modules/run_main:81:12)\n    at Object.<anonymous> (D:\\NodeJS\\FundoNotes\\node_modules\\@babel\\node\\src\\_babel-node.ts:214:12)\n    at Module._compile (node:internal/modules/cjs/loader:1159:14)","timestamp":"2022-12-06T11:06:32.562Z","trace":[{"column":null,"file":null,"function":"parse","line":null,"method":null,"native":false},{"column":39,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..json","line":1227,"method":".json","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1037,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":878,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1061,"method":"require","native":false},{"column":18,"file":"node:internal/modules/cjs/helpers","function":"require","line":103,"method":null,"native":false},{"column":1,"file":"D:\\NodeJS\\FundoNotes\\src\\/index.js","function":null,"line":18,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1159,"method":"_compile","native":false},{"column":24,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\pirates\\lib\\index.js","function":"Module._compile","line":136,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1213,"method":".js","native":false},{"column":7,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\pirates\\lib\\index.js","function":"Object.newLoader [as .js]","line":141,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1037,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":878,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.runMain","line":81,"method":"runMain","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\@babel\\node\\src\\_babel-node.ts","function":null,"line":214,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1159,"method":"_compile","native":false}]}
+error: 
+    status - 500 
+    message - ValidationError: "colour" is not allowed 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-06T11:22:36.117Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{id}" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/%7Bid%7D 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-12-06T11:40:56.928Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{_id}" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/%7B_id%7D 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-12-06T11:44:57.360Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{_id}" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/%7B_id%7D 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-12-06T11:52:35.686Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: '{_id}', userID: 'nikiSingh@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/%7B_id%7D 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-06T11:58:59.330Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{id}" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/%7Bid%7D 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-12-06T12:03:53.174Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{_id}" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/%7B_id%7D 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-12-06T12:18:43.648Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{id}" (type string) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/%7Bid%7D 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-12-06T12:26:52.955Z"}
