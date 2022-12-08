@@ -1,7 +1,8 @@
 import User from '../models/user.model';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken'
-import {sendMail} from '../utils/user.util'  ;
+import {sendMail} from '../utils/user.util';
+import { sender } from '../utils/rabbitmq';
 
 //create new user
 export const newUserRegister = async (body) => {
@@ -15,6 +16,8 @@ export const newUserRegister = async (body) => {
     body.password = hashpassword
     // Insert the new user if they do not exist yet
     const data = await User.create(body);
+    const registrationData = JSON.stringify({'firstname' : data.firstname, 'lastName' : data.lastname, 'emailID': data.email });
+    sender(registrationData);
     return data;
   }
 };

@@ -3852,3 +3852,47 @@ Error: connect ECONNREFUSED ::1:6379
 error: uncaughtException: read ECONNRESET
 Error: read ECONNRESET
     at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Thu Dec 08 2022 09:38:37 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1897601},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18437321,"external":21190428,"heapTotal":123695104,"heapUsed":116576544,"rss":98906112},"pid":27140,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-08T04:08:37.237Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received an instance of model
+TypeError: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received an instance of model
+    at new NodeError (node:internal/errors:393:5)
+    at Function.from (node:buffer:328:9)
+    at D:\NodeJS\FundoNotes\src\utils\/rabbitmq.js:19:43
+    at D:\NodeJS\FundoNotes\node_modules\amqplib\lib\callback_model.js:44:29
+    at D:\NodeJS\FundoNotes\node_modules\amqplib\lib\callback_model.js:58:7
+    at D:\NodeJS\FundoNotes\node_modules\amqplib\lib\callback_model.js:73:5
+    at reply (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\channel.js:105:16)
+    at Channel.C.accept (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\channel.js:450:12)
+    at Connection.mainAccept [as accept] (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\connection.js:63:33)
+    at Socket.go (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\connection.js:486:48)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12)
+    at emitReadable_ (node:internal/streams/readable:590:12)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Thu Dec 08 2022 16:20:07 GMT+0530 (India Standard Time)","error":{"code":"ERR_INVALID_ARG_TYPE"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1921692},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18397726,"external":21199298,"heapTotal":125669376,"heapUsed":118875048,"rss":168804352},"pid":6920,"uid":null,"version":"v18.12.0"},"stack":"TypeError: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received an instance of model\n    at new NodeError (node:internal/errors:393:5)\n    at Function.from (node:buffer:328:9)\n    at D:\\NodeJS\\FundoNotes\\src\\utils\\/rabbitmq.js:19:43\n    at D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\callback_model.js:44:29\n    at D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\callback_model.js:58:7\n    at D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\callback_model.js:73:5\n    at reply (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js:105:16)\n    at Channel.C.accept (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js:450:12)\n    at Connection.mainAccept [as accept] (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\connection.js:63:33)\n    at Socket.go (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\connection.js:486:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at emitReadable_ (node:internal/streams/readable:590:12)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-08T10:50:07.804Z","trace":[{"column":5,"file":"node:internal/errors","function":"new NodeError","line":393,"method":null,"native":false},{"column":9,"file":"node:buffer","function":"Function.from","line":328,"method":"from","native":false},{"column":43,"file":"D:\\NodeJS\\FundoNotes\\src\\utils\\/rabbitmq.js","function":null,"line":19,"method":null,"native":false},{"column":29,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\callback_model.js","function":null,"line":44,"method":null,"native":false},{"column":7,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\callback_model.js","function":null,"line":58,"method":null,"native":false},{"column":5,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\callback_model.js","function":null,"line":73,"method":null,"native":false},{"column":16,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js","function":"reply","line":105,"method":null,"native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js","function":"Channel.C.accept","line":450,"method":"accept","native":false},{"column":33,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\connection.js","function":"Connection.mainAccept [as accept]","line":63,"method":"mainAccept [as accept]","native":false},{"column":48,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\connection.js","function":"Socket.go","line":486,"method":"go","native":false},{"column":28,"file":"node:events","function":"Socket.emit","line":513,"method":"emit","native":false},{"column":12,"file":"node:domain","function":"Socket.emit","line":489,"method":"emit","native":false},{"column":12,"file":"node:internal/streams/readable","function":"emitReadable_","line":590,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: 
+    status - 500 
+    message - ReferenceError: email is not defined
+    at _callee$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:19:120)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-08T10:57:20.387Z"}
+error: 
+    status - 500 
+    message - Error: Email id already exist
+    at _callee$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:12:11)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-08T10:58:32.928Z"}
