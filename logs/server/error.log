@@ -3833,3 +3833,22 @@ error:
     method - PUT 
     IP - ::1
    {"timestamp":"2022-12-06T13:30:52.308Z"}
+error: 
+    status - 500 
+    message - Error: Enter Password is invalid
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:33:13)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-07T14:37:03.043Z"}
+error: uncaughtException: connect ECONNREFUSED ::1:6379
+Error: connect ECONNREFUSED ::1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1300:16) {"date":"Wed Dec 07 2022 21:35:15 GMT+0530 (India Standard Time)","error":{"address":"::1","code":"ECONNREFUSED","errno":-4078,"port":6379,"syscall":"connect"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1854199},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18312126,"external":21746806,"heapTotal":186175488,"heapUsed":150859072,"rss":229392384},"pid":20112,"uid":null,"version":"v18.12.0"},"stack":"Error: connect ECONNREFUSED ::1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1300:16)","timestamp":"2022-12-07T16:05:15.259Z","trace":[{"column":16,"file":"node:net","function":"TCPConnectWrap.afterConnect [as oncomplete]","line":1300,"method":"afterConnect [as oncomplete]","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Thu Dec 08 2022 09:38:37 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1897601},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18437321,"external":21190428,"heapTotal":123695104,"heapUsed":116576544,"rss":98906112},"pid":27140,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-08T04:08:37.237Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
