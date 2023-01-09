@@ -33,6 +33,7 @@ export const sendMail = async (emailId) => {
         };
 
         const result = await transport.sendMail(mailoption)
+ 
         return result
 
 
@@ -41,7 +42,35 @@ export const sendMail = async (emailId) => {
     }
 
 }
+//Function for send mail after user registration
+export const userRegistrationMail = async (emailId) => {
+    try {
+        const accessToken = await oAuth2Client.getAccessToken();
+        const transport = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                type: 'OAuth2',
+                user: 'prutuja189@gmail.com',
+                clientId: CLIENT_ID,
+                clientSecret: CLIENT_SECRET,
+                refreshToken: REFRESH_TOKEN,
+                accessToken: accessToken
+            }
+        })
 
-//sendMail()
-//     .then((result) => console.log('Email sent...', result))
-//     .catch((error) => console.log(error.message));
+        const mailoption = {
+            from: 'Rutuja Patil  <prutuja189@gmail.com>',
+            to: emailId,
+            subject: 'User registration',
+            text: 'User registration done successfully',
+            html: '<h1> WELCOME.....User registration done successfully <h1>'
+        };
+
+        const result = await transport.sendMail(mailoption);
+        return result
+
+    } catch (error) {
+        return error
+    }
+
+}

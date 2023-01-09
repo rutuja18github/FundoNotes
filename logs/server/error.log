@@ -3896,3 +3896,1075 @@ error:
     method - POST 
     IP - ::1
    {"timestamp":"2022-12-08T10:58:32.928Z"}
+error: uncaughtException: Channel closed by server: 406 (PRECONDITION-FAILED) with message "PRECONDITION_FAILED - inequivalent arg 'durable' for queue 'userRegistration' in vhost '/': received 'true' but current is 'false'"
+Error: Channel closed by server: 406 (PRECONDITION-FAILED) with message "PRECONDITION_FAILED - inequivalent arg 'durable' for queue 'userRegistration' in vhost '/': received 'true' but current is 'false'"
+    at Channel.C.accept (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\channel.js:421:17)
+    at Connection.mainAccept [as accept] (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\connection.js:63:33)
+    at Socket.go (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\connection.js:486:48)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12)
+    at emitReadable_ (node:internal/streams/readable:590:12)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Thu Dec 08 2022 19:52:42 GMT+0530 (India Standard Time)","error":{"classId":50,"code":406,"methodId":10},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1934447},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19589956,"external":22347171,"heapTotal":203288576,"heapUsed":176297216,"rss":248258560},"pid":21632,"uid":null,"version":"v18.12.0"},"stack":"Error: Channel closed by server: 406 (PRECONDITION-FAILED) with message \"PRECONDITION_FAILED - inequivalent arg 'durable' for queue 'userRegistration' in vhost '/': received 'true' but current is 'false'\"\n    at Channel.C.accept (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js:421:17)\n    at Connection.mainAccept [as accept] (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\connection.js:63:33)\n    at Socket.go (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\connection.js:486:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at emitReadable_ (node:internal/streams/readable:590:12)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-08T14:22:42.970Z","trace":[{"column":17,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js","function":"Channel.C.accept","line":421,"method":"accept","native":false},{"column":33,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\connection.js","function":"Connection.mainAccept [as accept]","line":63,"method":"mainAccept [as accept]","native":false},{"column":48,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\connection.js","function":"Socket.go","line":486,"method":"go","native":false},{"column":28,"file":"node:events","function":"Socket.emit","line":513,"method":"emit","native":false},{"column":12,"file":"node:domain","function":"Socket.emit","line":489,"method":"emit","native":false},{"column":12,"file":"node:internal/streams/readable","function":"emitReadable_","line":590,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: uncaughtException: Unexpected token u in JSON at position 0
+SyntaxError: Unexpected token u in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at channel.consume.noAck (D:\NodeJS\FundoNotes\src\utils\/rabbitmq.js:49:35)
+    at Channel.BaseChannel.dispatchMessage (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\channel.js:483:12)
+    at Channel.BaseChannel.handleDelivery (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\channel.js:492:15)
+    at Channel.emit (node:events:513:28)
+    at Channel.emit (node:domain:489:12)
+    at D:\NodeJS\FundoNotes\node_modules\amqplib\lib\channel.js:278:10
+    at Channel.content [as handleMessage] (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\channel.js:331:9)
+    at Channel.C.acceptMessageFrame (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\channel.js:246:31)
+    at Channel.C.accept (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\channel.js:399:17)
+    at Connection.mainAccept [as accept] (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\connection.js:63:33)
+    at Socket.go (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\connection.js:486:48)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12)
+    at emitReadable_ (node:internal/streams/readable:590:12)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Thu Dec 08 2022 19:54:21 GMT+0530 (India Standard Time)","error":{"code":541},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1934546},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19513196,"external":22269851,"heapTotal":206802944,"heapUsed":178816800,"rss":254504960},"pid":24648,"uid":null,"version":"v18.12.0"},"stack":"SyntaxError: Unexpected token u in JSON at position 0\n    at JSON.parse (<anonymous>)\n    at channel.consume.noAck (D:\\NodeJS\\FundoNotes\\src\\utils\\/rabbitmq.js:49:35)\n    at Channel.BaseChannel.dispatchMessage (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js:483:12)\n    at Channel.BaseChannel.handleDelivery (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js:492:15)\n    at Channel.emit (node:events:513:28)\n    at Channel.emit (node:domain:489:12)\n    at D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js:278:10\n    at Channel.content [as handleMessage] (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js:331:9)\n    at Channel.C.acceptMessageFrame (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js:246:31)\n    at Channel.C.accept (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js:399:17)\n    at Connection.mainAccept [as accept] (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\connection.js:63:33)\n    at Socket.go (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\connection.js:486:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at emitReadable_ (node:internal/streams/readable:590:12)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-08T14:24:21.813Z","trace":[{"column":null,"file":null,"function":"JSON.parse","line":null,"method":"parse","native":false},{"column":35,"file":"D:\\NodeJS\\FundoNotes\\src\\utils\\/rabbitmq.js","function":"channel.consume.noAck","line":49,"method":"noAck","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js","function":"Channel.BaseChannel.dispatchMessage","line":483,"method":"dispatchMessage","native":false},{"column":15,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js","function":"Channel.BaseChannel.handleDelivery","line":492,"method":"handleDelivery","native":false},{"column":28,"file":"node:events","function":"Channel.emit","line":513,"method":"emit","native":false},{"column":12,"file":"node:domain","function":"Channel.emit","line":489,"method":"emit","native":false},{"column":10,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js","function":null,"line":278,"method":null,"native":false},{"column":9,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js","function":"Channel.content [as handleMessage]","line":331,"method":"content [as handleMessage]","native":false},{"column":31,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js","function":"Channel.C.acceptMessageFrame","line":246,"method":"acceptMessageFrame","native":false},{"column":17,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js","function":"Channel.C.accept","line":399,"method":"accept","native":false},{"column":33,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\connection.js","function":"Connection.mainAccept [as accept]","line":63,"method":"mainAccept [as accept]","native":false},{"column":48,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\connection.js","function":"Socket.go","line":486,"method":"go","native":false},{"column":28,"file":"node:events","function":"Socket.emit","line":513,"method":"emit","native":false},{"column":12,"file":"node:domain","function":"Socket.emit","line":489,"method":"emit","native":false},{"column":12,"file":"node:internal/streams/readable","function":"emitReadable_","line":590,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: uncaughtException: (0 , _user.userRegistrationMail) is not a function
+TypeError: (0 , _user.userRegistrationMail) is not a function
+    at channel.consume.noAck (D:\NodeJS\FundoNotes\src\utils\/rabbitmq.js:50:37)
+    at Channel.BaseChannel.dispatchMessage (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\channel.js:483:12)
+    at Channel.BaseChannel.handleDelivery (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\channel.js:492:15)
+    at Channel.emit (node:events:513:28)
+    at Channel.emit (node:domain:489:12)
+    at D:\NodeJS\FundoNotes\node_modules\amqplib\lib\channel.js:278:10
+    at Channel.content [as handleMessage] (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\channel.js:331:9)
+    at Channel.C.acceptMessageFrame (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\channel.js:246:31)
+    at Channel.C.accept (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\channel.js:399:17)
+    at Connection.mainAccept [as accept] (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\connection.js:63:33)
+    at Socket.go (D:\NodeJS\FundoNotes\node_modules\amqplib\lib\connection.js:486:48)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12)
+    at emitReadable_ (node:internal/streams/readable:590:12)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Thu Dec 08 2022 19:55:49 GMT+0530 (India Standard Time)","error":{"code":541},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1934634},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19647531,"external":22404186,"heapTotal":206802944,"heapUsed":178864888,"rss":254304256},"pid":21252,"uid":null,"version":"v18.12.0"},"stack":"TypeError: (0 , _user.userRegistrationMail) is not a function\n    at channel.consume.noAck (D:\\NodeJS\\FundoNotes\\src\\utils\\/rabbitmq.js:50:37)\n    at Channel.BaseChannel.dispatchMessage (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js:483:12)\n    at Channel.BaseChannel.handleDelivery (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js:492:15)\n    at Channel.emit (node:events:513:28)\n    at Channel.emit (node:domain:489:12)\n    at D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js:278:10\n    at Channel.content [as handleMessage] (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js:331:9)\n    at Channel.C.acceptMessageFrame (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js:246:31)\n    at Channel.C.accept (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js:399:17)\n    at Connection.mainAccept [as accept] (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\connection.js:63:33)\n    at Socket.go (D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\connection.js:486:48)\n    at Socket.emit (node:events:513:28)\n    at Socket.emit (node:domain:489:12)\n    at emitReadable_ (node:internal/streams/readable:590:12)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2022-12-08T14:25:49.936Z","trace":[{"column":37,"file":"D:\\NodeJS\\FundoNotes\\src\\utils\\/rabbitmq.js","function":"channel.consume.noAck","line":50,"method":"noAck","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js","function":"Channel.BaseChannel.dispatchMessage","line":483,"method":"dispatchMessage","native":false},{"column":15,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js","function":"Channel.BaseChannel.handleDelivery","line":492,"method":"handleDelivery","native":false},{"column":28,"file":"node:events","function":"Channel.emit","line":513,"method":"emit","native":false},{"column":12,"file":"node:domain","function":"Channel.emit","line":489,"method":"emit","native":false},{"column":10,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js","function":null,"line":278,"method":null,"native":false},{"column":9,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js","function":"Channel.content [as handleMessage]","line":331,"method":"content [as handleMessage]","native":false},{"column":31,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js","function":"Channel.C.acceptMessageFrame","line":246,"method":"acceptMessageFrame","native":false},{"column":17,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\channel.js","function":"Channel.C.accept","line":399,"method":"accept","native":false},{"column":33,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\connection.js","function":"Connection.mainAccept [as accept]","line":63,"method":"mainAccept [as accept]","native":false},{"column":48,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\amqplib\\lib\\connection.js","function":"Socket.go","line":486,"method":"go","native":false},{"column":28,"file":"node:events","function":"Socket.emit","line":513,"method":"emit","native":false},{"column":12,"file":"node:domain","function":"Socket.emit","line":489,"method":"emit","native":false},{"column":12,"file":"node:internal/streams/readable","function":"emitReadable_","line":590,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+error: uncaughtException: connect ECONNREFUSED ::1:5672
+Error: connect ECONNREFUSED ::1:5672
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1300:16) {"date":"Fri Dec 09 2022 08:35:07 GMT+0530 (India Standard Time)","error":{"address":"::1","code":"ECONNREFUSED","errno":-4078,"port":5672,"syscall":"connect"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1980192},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18449302,"external":21074865,"heapTotal":201371648,"heapUsed":166098592,"rss":245018624},"pid":9572,"uid":null,"version":"v18.12.0"},"stack":"Error: connect ECONNREFUSED ::1:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1300:16)","timestamp":"2022-12-09T03:05:07.836Z","trace":[{"column":16,"file":"node:net","function":"TCPConnectWrap.afterConnect [as oncomplete]","line":1300,"method":"afterConnect [as oncomplete]","native":false}]}
+error: uncaughtException: connect ECONNREFUSED ::1:5672
+Error: connect ECONNREFUSED ::1:5672
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1300:16) {"date":"Mon Dec 12 2022 07:57:01 GMT+0530 (India Standard Time)","error":{"address":"::1","code":"ECONNREFUSED","errno":-4078,"port":5672,"syscall":"connect"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":2237105},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18394046,"external":21376430,"heapTotal":186699776,"heapUsed":151658952,"rss":228356096},"pid":14592,"uid":null,"version":"v18.12.0"},"stack":"Error: connect ECONNREFUSED ::1:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1300:16)","timestamp":"2022-12-12T02:27:01.227Z","trace":[{"column":16,"file":"node:net","function":"TCPConnectWrap.afterConnect [as oncomplete]","line":1300,"method":"afterConnect [as oncomplete]","native":false}]}
+error: uncaughtException: connect ECONNREFUSED ::1:5672
+Error: connect ECONNREFUSED ::1:5672
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1300:16) {"date":"Fri Dec 16 2022 10:53:33 GMT+0530 (India Standard Time)","error":{"address":"::1","code":"ECONNREFUSED","errno":-4078,"port":5672,"syscall":"connect"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":2593297},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18752904,"external":21378467,"heapTotal":179236864,"heapUsed":153548848,"rss":224174080},"pid":20332,"uid":null,"version":"v18.12.0"},"stack":"Error: connect ECONNREFUSED ::1:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1300:16)","timestamp":"2022-12-16T05:23:34.017Z","trace":[{"column":16,"file":"node:net","function":"TCPConnectWrap.afterConnect [as oncomplete]","line":1300,"method":"afterConnect [as oncomplete]","native":false}]}
+error: 
+    status - 500 
+    message - ValidationError: "password" with value "ritika" fails to match the required pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])((?=.*[!@#&?/*~$^]{1})).{8,}$/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-16T05:32:49.726Z"}
+error: 
+    status - 500 
+    message - ValidationError: "confirmPassword" is not allowed 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-16T05:33:47.327Z"}
+error: 
+    status - 500 
+    message - ValidationError: "forgotPassword" is required 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-16T05:42:36.178Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-16T05:54:28.835Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-16T06:01:06.784Z"}
+error: 
+    status - 500 
+    message - Error: Invalid Email ID
+    at _callee4$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:68:11)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/forgotpassword 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-16T06:14:16.263Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is required 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-16T07:14:15.635Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" is required 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-16T07:16:01.932Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" is required 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-16T07:17:41.089Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstname" with value "sjkdsakdl" fails to match the required pattern: /^[A-Z]{1}[a-z]/ 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-16T08:24:43.520Z"}
+error: 
+    status - 500 
+    message - Error: Email id already exist
+    at _callee$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:12:11)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-16T08:25:46.594Z"}
+error: 
+    status - 500 
+    message - Error: Invalid Email ID
+    at _callee4$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:68:11)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/forgotpassword 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-16T08:35:11.663Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Fri Dec 16 2022 14:13:43 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":2605306},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18583110,"external":21336217,"heapTotal":124620800,"heapUsed":118037728,"rss":36564992},"pid":11216,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-16T08:43:43.233Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.verify (D:\NodeJS\FundoNotes\node_modules\jsonwebtoken\verify.js:53:17)
+    at _callee$ (D:\NodeJS\FundoNotes\src\middlewares\/auth.middleware.js:23:30)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12
+    at userAuth (D:\NodeJS\FundoNotes\src\middlewares\/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:144:13)
+    at newNoteValidator (D:\NodeJS\FundoNotes\src\validators\/note.validator.js:16:5)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:144:13) 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-20T09:27:31.184Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.verify (D:\NodeJS\FundoNotes\node_modules\jsonwebtoken\verify.js:53:17)
+    at _callee$ (D:\NodeJS\FundoNotes\src\middlewares\/auth.middleware.js:23:30)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12
+    at userAuth (D:\NodeJS\FundoNotes\src\middlewares\/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:284:15 
+    url - /api/v1/note/allNote 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-12-20T10:56:01.117Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/create 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2022-12-20T10:59:09.144Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.verify (D:\NodeJS\FundoNotes\node_modules\jsonwebtoken\verify.js:53:17)
+    at _callee$ (D:\NodeJS\FundoNotes\src\middlewares\/auth.middleware.js:23:30)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12
+    at userAuth (D:\NodeJS\FundoNotes\src\middlewares\/auth.middleware.js:12:22)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\NodeJS\FundoNotes\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\NodeJS\FundoNotes\node_modules\express\lib\router\layer.js:95:5)
+    at D:\NodeJS\FundoNotes\node_modules\express\lib\router\index.js:284:15 
+    url - /api/v1/note/allNote 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-12-20T11:00:24.104Z"}
+error: 
+    status - 500 
+    message - Error: Enter Password is invalid
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:36:13)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-20T11:04:22.121Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-20T11:07:17.577Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-20T11:14:12.721Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Tue Dec 20 2022 16:47:30 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":106313},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18419733,"external":21173655,"heapTotal":125931520,"heapUsed":118094912,"rss":169775104},"pid":10424,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-20T11:17:30.594Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: 
+    status - 500 
+    message - ValidationError: "description" length must be at least 4 characters long 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-20T11:20:18.252Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-20T13:01:59.011Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Tue Dec 20 2022 18:39:11 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":113013},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18691248,"external":21445170,"heapTotal":129601536,"heapUsed":123886064,"rss":45809664},"pid":14532,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-20T13:09:11.227Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Tue Dec 20 2022 20:16:10 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":118833},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18589199,"external":21343121,"heapTotal":126980096,"heapUsed":120212568,"rss":31711232},"pid":24912,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-20T14:46:10.579Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Wed Dec 21 2022 10:52:40 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1289},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18500422,"external":21253529,"heapTotal":123310080,"heapUsed":116890400,"rss":115695616},"pid":10904,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-21T05:22:40.611Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: Could not connect to the database. querySrv ECONNREFUSED _mongodb._tcp.demo.aoloa.mongodb.net {"code":"ECONNREFUSED","hostname":"_mongodb._tcp.demo.aoloa.mongodb.net","stack":"Error: querySrv ECONNREFUSED _mongodb._tcp.demo.aoloa.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:47:19)","syscall":"querySrv","timestamp":"2022-12-21T10:44:35.313Z"}
+error: Could not connect to the database. querySrv ECONNREFUSED _mongodb._tcp.demo.aoloa.mongodb.net {"code":"ECONNREFUSED","hostname":"_mongodb._tcp.demo.aoloa.mongodb.net","stack":"Error: querySrv ECONNREFUSED _mongodb._tcp.demo.aoloa.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:47:19)","syscall":"querySrv","timestamp":"2022-12-21T10:45:23.592Z"}
+error: Could not connect to the database. querySrv ECONNREFUSED _mongodb._tcp.demo.aoloa.mongodb.net {"code":"ECONNREFUSED","hostname":"_mongodb._tcp.demo.aoloa.mongodb.net","stack":"Error: querySrv ECONNREFUSED _mongodb._tcp.demo.aoloa.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:47:19)","syscall":"querySrv","timestamp":"2022-12-21T12:08:08.802Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Wed Dec 21 2022 17:38:58 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":25666},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18377666,"external":21130753,"heapTotal":124096512,"heapUsed":116394112,"rss":166318080},"pid":2184,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-21T12:08:58.351Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: Could not connect to the database. querySrv ECONNREFUSED _mongodb._tcp.demo.aoloa.mongodb.net {"code":"ECONNREFUSED","hostname":"_mongodb._tcp.demo.aoloa.mongodb.net","stack":"Error: querySrv ECONNREFUSED _mongodb._tcp.demo.aoloa.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:47:19)","syscall":"querySrv","timestamp":"2022-12-21T12:09:33.778Z"}
+error: Could not connect to the database. querySrv ECONNREFUSED _mongodb._tcp.demo.aoloa.mongodb.net {"code":"ECONNREFUSED","hostname":"_mongodb._tcp.demo.aoloa.mongodb.net","stack":"Error: querySrv ECONNREFUSED _mongodb._tcp.demo.aoloa.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:47:19)","syscall":"querySrv","timestamp":"2022-12-21T12:13:10.047Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/63a1b44f9a6af16150dc62f6 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-21T13:38:03.407Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Wed Dec 21 2022 19:10:56 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":31184},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18652405,"external":21406327,"heapTotal":131174400,"heapUsed":124474512,"rss":35864576},"pid":19100,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-21T13:40:56.315Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'undefined', userID: 'rutu@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/undefined/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-22T12:54:04.502Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'undefined', userID: 'rutu@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/undefined/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-22T12:55:51.541Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'undefined', userID: 'rutu@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/undefined/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-22T12:56:43.100Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'undefined', userID: 'rutu@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/undefined/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-22T12:57:14.378Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'undefined', userID: 'rutu@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/undefined/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-22T13:02:38.002Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'undefined', userID: 'rutu@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/undefined/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-22T13:03:10.073Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Thu Dec 22 2022 18:36:59 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":115547},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18521319,"external":21274426,"heapTotal":124534784,"heapUsed":118141480,"rss":138231808},"pid":19908,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-22T13:06:59.385Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Thu Dec 22 2022 18:55:08 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":116636},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18502874,"external":21255981,"heapTotal":126717952,"heapUsed":120343736,"rss":171995136},"pid":10556,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-22T13:25:08.410Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/63a19b0ebed9e638c43b4a72/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-23T06:00:20.973Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/63a1b44f9a6af16150dc62f6/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-23T06:00:44.025Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/63a1b44f9a6af16150dc62f6/trash 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-23T06:04:12.934Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Fri Dec 23 2022 11:34:33 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":176602},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18582827,"external":21335934,"heapTotal":125145088,"heapUsed":117795688,"rss":41959424},"pid":11472,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-23T06:04:33.731Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Mon Dec 26 2022 21:01:38 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":469826},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18591136,"external":21344243,"heapTotal":125407232,"heapUsed":118230416,"rss":49143808},"pid":14428,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-26T15:31:38.203Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Mon Dec 26 2022 22:15:44 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":474273},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18678629,"external":21432551,"heapTotal":131698688,"heapUsed":125208888,"rss":30826496},"pid":11988,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-26T16:45:44.642Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/63a1b44f9a6af16150dc62f6 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-26T17:49:13.261Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/63a1b44f9a6af16150dc62f6 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-26T17:49:17.692Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/63a1b44f9a6af16150dc62f6 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-26T17:49:22.889Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/63a19b0ebed9e638c43b4a72 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-26T17:53:08.932Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Mon Dec 26 2022 23:23:29 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":478337},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18535977,"external":21289899,"heapTotal":129863680,"heapUsed":123950464,"rss":61186048},"pid":608,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-26T17:53:29.237Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-27T03:36:15.334Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Tue Dec 27 2022 09:06:26 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":513313},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18626730,"external":21379837,"heapTotal":125669376,"heapUsed":119598344,"rss":42897408},"pid":21232,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-27T03:36:26.168Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Tue Dec 27 2022 09:28:53 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":514661},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18534440,"external":21288362,"heapTotal":128552960,"heapUsed":120800352,"rss":43597824},"pid":1376,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-27T03:58:53.619Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Tue Dec 27 2022 11:20:45 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":521373},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18567278,"external":21320385,"heapTotal":124882944,"heapUsed":117214840,"rss":78143488},"pid":13004,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-27T05:50:46.006Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Tue Dec 27 2022 15:14:40 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":535407},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18630808,"external":21383915,"heapTotal":124882944,"heapUsed":118453544,"rss":47779840},"pid":9292,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-27T09:44:40.280Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Tue Dec 27 2022 17:53:13 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":544920},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18710287,"external":21464209,"heapTotal":129863680,"heapUsed":122537920,"rss":42397696},"pid":20864,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-27T12:23:13.144Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Tue Dec 27 2022 19:01:23 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":549011},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18718233,"external":21472155,"heapTotal":130387968,"heapUsed":124140880,"rss":40833024},"pid":12440,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-27T13:31:23.927Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/63a2954988c6ad2a98174a5c 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-12-27T15:44:38.203Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Tue Dec 27 2022 21:14:47 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":557015},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18609637,"external":21362744,"heapTotal":127766528,"heapUsed":120662320,"rss":32104448},"pid":13036,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-27T15:44:47.961Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/note/63ab09890fc3c232ec142f41/archive 
+      method - PUT 
+      IP - ::1
+     {"timestamp":"2022-12-28T02:54:22.023Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Wed Dec 28 2022 10:30:31 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":604758},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18739612,"external":21493534,"heapTotal":130650112,"heapUsed":124544744,"rss":31825920},"pid":19148,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-28T05:00:31.234Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Thu Dec 29 2022 14:15:31 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":704659},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18664477,"external":21417584,"heapTotal":124620800,"heapUsed":117976824,"rss":24670208},"pid":20536,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-29T08:45:32.035Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Thu Dec 29 2022 19:16:39 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":722726},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18436040,"external":21189147,"heapTotal":123310080,"heapUsed":115770256,"rss":144904192},"pid":19600,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-29T13:46:39.317Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Thu Dec 29 2022 20:38:45 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":727652},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18525768,"external":21278875,"heapTotal":125407232,"heapUsed":117549416,"rss":56692736},"pid":16856,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-29T15:08:45.462Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Fri Dec 30 2022 14:48:43 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":793048},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18506752,"external":21259859,"heapTotal":124620800,"heapUsed":117153800,"rss":166379520},"pid":1920,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-30T09:18:43.111Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Fri Dec 30 2022 16:50:07 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":800332},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18661597,"external":21414704,"heapTotal":125931520,"heapUsed":119866752,"rss":39272448},"pid":15568,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-30T11:20:07.205Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Fri Dec 30 2022 18:20:18 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":805743},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18609262,"external":21412811,"heapTotal":129077248,"heapUsed":121339232,"rss":33869824},"pid":15408,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-30T12:50:18.665Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-12-31T06:33:14.048Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Sat Dec 31 2022 12:03:28 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":869533},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18567637,"external":21320744,"heapTotal":121475072,"heapUsed":117076880,"rss":48627712},"pid":29440,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-31T06:33:28.174Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Sat Dec 31 2022 12:46:30 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":872116},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18538728,"external":21292650,"heapTotal":128552960,"heapUsed":119702880,"rss":59944960},"pid":15144,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2022-12-31T07:16:31.012Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Mon Jan 02 2023 20:03:01 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1071105},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18569678,"external":21322785,"heapTotal":125407232,"heapUsed":118714264,"rss":33214464},"pid":18472,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2023-01-02T14:33:01.222Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Tue Jan 03 2023 10:51:23 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1124407},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18511913,"external":21265020,"heapTotal":123047936,"heapUsed":116766712,"rss":42942464},"pid":28864,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2023-01-03T05:21:23.992Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Wed Jan 04 2023 10:53:30 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1210934},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18505383,"external":21259305,"heapTotal":125669376,"heapUsed":118961600,"rss":40005632},"pid":12792,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2023-01-04T05:23:30.195Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Thu Jan 05 2023 10:56:57 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1297541},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18474400,"external":21227507,"heapTotal":121737216,"heapUsed":116306528,"rss":63586304},"pid":18204,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2023-01-05T05:26:57.651Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/63aad0b99e0aeb5180e9dffe 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2023-01-05T09:28:28.508Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Thu Jan 05 2023 14:58:44 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1312048},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18652712,"external":21405819,"heapTotal":126980096,"heapUsed":120111216,"rss":36904960},"pid":1524,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2023-01-05T09:28:45.017Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Thu Jan 05 2023 15:36:39 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1314323},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18549000,"external":21302922,"heapTotal":126717952,"heapUsed":121273640,"rss":45371392},"pid":4764,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2023-01-05T10:06:39.870Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-05T12:56:25.458Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-05T12:56:28.699Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-05T12:57:42.574Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-05T12:58:08.811Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-05T13:00:21.016Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-05T13:00:52.772Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-05T13:00:55.728Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-05T13:01:24.084Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-05T13:02:10.605Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-05T13:03:10.423Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-05T13:05:33.807Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-05T13:06:36.096Z"}
+error: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (D:\NodeJS\FundoNotes\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\NodeJS\FundoNotes\src\/index.js:42:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._compile (D:\NodeJS\FundoNotes\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Object.newLoader [as .js] (D:\NodeJS\FundoNotes\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.runMain (node:internal/modules/run_main:81:12)
+    at Object.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\node\src\_babel-node.ts:214:12)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32) {"date":"Thu Jan 05 2023 18:41:30 GMT+0530 (India Standard Time)","error":{"address":"::","code":"EADDRINUSE","errno":-4091,"port":3000,"syscall":"listen"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1325412},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18968970,"external":21594533,"heapTotal":196734976,"heapUsed":165437120,"rss":242835456},"pid":27788,"uid":null,"version":"v18.12.0"},"stack":"Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1485:16)\n    at listenInCluster (node:net:1533:12)\n    at Server.listen (node:net:1621:7)\n    at Function.listen (D:\\NodeJS\\FundoNotes\\node_modules\\express\\lib\\application.js:635:24)\n    at Object.<anonymous> (D:\\NodeJS\\FundoNotes\\src\\/index.js:42:5)\n    at Module._compile (node:internal/modules/cjs/loader:1159:14)\n    at Module._compile (D:\\NodeJS\\FundoNotes\\node_modules\\pirates\\lib\\index.js:136:24)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)\n    at Object.newLoader [as .js] (D:\\NodeJS\\FundoNotes\\node_modules\\pirates\\lib\\index.js:141:7)\n    at Module.load (node:internal/modules/cjs/loader:1037:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:878:12)\n    at Function.runMain (node:internal/modules/run_main:81:12)\n    at Object.<anonymous> (D:\\NodeJS\\FundoNotes\\node_modules\\@babel\\node\\src\\_babel-node.ts:214:12)\n    at Module._compile (node:internal/modules/cjs/loader:1159:14)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1213:10)\n    at Module.load (node:internal/modules/cjs/loader:1037:32)","timestamp":"2023-01-05T13:11:30.061Z","trace":[{"column":16,"file":"node:net","function":"Server.setupListenHandle [as _listen2]","line":1485,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"node:net","function":"listenInCluster","line":1533,"method":null,"native":false},{"column":7,"file":"node:net","function":"Server.listen","line":1621,"method":"listen","native":false},{"column":24,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\express\\lib\\application.js","function":"Function.listen","line":635,"method":"listen","native":false},{"column":5,"file":"D:\\NodeJS\\FundoNotes\\src\\/index.js","function":null,"line":42,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1159,"method":"_compile","native":false},{"column":24,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\pirates\\lib\\index.js","function":"Module._compile","line":136,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1213,"method":".js","native":false},{"column":7,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\pirates\\lib\\index.js","function":"Object.newLoader [as .js]","line":141,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1037,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":878,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.runMain","line":81,"method":"runMain","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\@babel\\node\\src\\_babel-node.ts","function":null,"line":214,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1159,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1213,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1037,"method":"load","native":false}]}
+error: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (D:\NodeJS\FundoNotes\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\NodeJS\FundoNotes\src\/index.js:42:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._compile (D:\NodeJS\FundoNotes\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Object.newLoader [as .js] (D:\NodeJS\FundoNotes\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.runMain (node:internal/modules/run_main:81:12)
+    at Object.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\node\src\_babel-node.ts:214:12)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {"date":"Thu Jan 05 2023 18:42:24 GMT+0530 (India Standard Time)","error":{"address":"::","code":"EADDRINUSE","errno":-4091,"port":3000,"syscall":"listen"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1325466},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19576608,"external":22202171,"heapTotal":204705792,"heapUsed":175059616,"rss":251813888},"pid":21720,"uid":null,"version":"v18.12.0"},"stack":"Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1485:16)\n    at listenInCluster (node:net:1533:12)\n    at Server.listen (node:net:1621:7)\n    at Function.listen (D:\\NodeJS\\FundoNotes\\node_modules\\express\\lib\\application.js:635:24)\n    at Object.<anonymous> (D:\\NodeJS\\FundoNotes\\src\\/index.js:42:5)\n    at Module._compile (node:internal/modules/cjs/loader:1159:14)\n    at Module._compile (D:\\NodeJS\\FundoNotes\\node_modules\\pirates\\lib\\index.js:136:24)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)\n    at Object.newLoader [as .js] (D:\\NodeJS\\FundoNotes\\node_modules\\pirates\\lib\\index.js:141:7)\n    at Module.load (node:internal/modules/cjs/loader:1037:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:878:12)\n    at Function.runMain (node:internal/modules/run_main:81:12)\n    at Object.<anonymous> (D:\\NodeJS\\FundoNotes\\node_modules\\@babel\\node\\src\\_babel-node.ts:214:12)\n    at Module._compile (node:internal/modules/cjs/loader:1159:14)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1213:10)\n    at Module.load (node:internal/modules/cjs/loader:1037:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:878:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n    at node:internal/main/run_main_module:23:47","timestamp":"2023-01-05T13:12:24.256Z","trace":[{"column":16,"file":"node:net","function":"Server.setupListenHandle [as _listen2]","line":1485,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"node:net","function":"listenInCluster","line":1533,"method":null,"native":false},{"column":7,"file":"node:net","function":"Server.listen","line":1621,"method":"listen","native":false},{"column":24,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\express\\lib\\application.js","function":"Function.listen","line":635,"method":"listen","native":false},{"column":5,"file":"D:\\NodeJS\\FundoNotes\\src\\/index.js","function":null,"line":42,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1159,"method":"_compile","native":false},{"column":24,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\pirates\\lib\\index.js","function":"Module._compile","line":136,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1213,"method":".js","native":false},{"column":7,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\pirates\\lib\\index.js","function":"Object.newLoader [as .js]","line":141,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1037,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":878,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.runMain","line":81,"method":"runMain","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\@babel\\node\\src\\_babel-node.ts","function":null,"line":214,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1159,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1213,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1037,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":878,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":81,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":47,"file":"node:internal/main/run_main_module","function":null,"line":23,"method":null,"native":false}]}
+error: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (D:\NodeJS\FundoNotes\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\NodeJS\FundoNotes\src\/index.js:42:5)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._compile (D:\NodeJS\FundoNotes\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Object.newLoader [as .js] (D:\NodeJS\FundoNotes\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.runMain (node:internal/modules/run_main:81:12)
+    at Object.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\node\src\_babel-node.ts:214:12)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {"date":"Thu Jan 05 2023 18:44:41 GMT+0530 (India Standard Time)","error":{"address":"::","code":"EADDRINUSE","errno":-4091,"port":3000,"syscall":"listen"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1325603},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19461856,"external":22087419,"heapTotal":204664832,"heapUsed":175587952,"rss":251183104},"pid":29100,"uid":null,"version":"v18.12.0"},"stack":"Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1485:16)\n    at listenInCluster (node:net:1533:12)\n    at Server.listen (node:net:1621:7)\n    at Function.listen (D:\\NodeJS\\FundoNotes\\node_modules\\express\\lib\\application.js:635:24)\n    at Object.<anonymous> (D:\\NodeJS\\FundoNotes\\src\\/index.js:42:5)\n    at Module._compile (node:internal/modules/cjs/loader:1159:14)\n    at Module._compile (D:\\NodeJS\\FundoNotes\\node_modules\\pirates\\lib\\index.js:136:24)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)\n    at Object.newLoader [as .js] (D:\\NodeJS\\FundoNotes\\node_modules\\pirates\\lib\\index.js:141:7)\n    at Module.load (node:internal/modules/cjs/loader:1037:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:878:12)\n    at Function.runMain (node:internal/modules/run_main:81:12)\n    at Object.<anonymous> (D:\\NodeJS\\FundoNotes\\node_modules\\@babel\\node\\src\\_babel-node.ts:214:12)\n    at Module._compile (node:internal/modules/cjs/loader:1159:14)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1213:10)\n    at Module.load (node:internal/modules/cjs/loader:1037:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:878:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n    at node:internal/main/run_main_module:23:47","timestamp":"2023-01-05T13:14:41.371Z","trace":[{"column":16,"file":"node:net","function":"Server.setupListenHandle [as _listen2]","line":1485,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"node:net","function":"listenInCluster","line":1533,"method":null,"native":false},{"column":7,"file":"node:net","function":"Server.listen","line":1621,"method":"listen","native":false},{"column":24,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\express\\lib\\application.js","function":"Function.listen","line":635,"method":"listen","native":false},{"column":5,"file":"D:\\NodeJS\\FundoNotes\\src\\/index.js","function":null,"line":42,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1159,"method":"_compile","native":false},{"column":24,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\pirates\\lib\\index.js","function":"Module._compile","line":136,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1213,"method":".js","native":false},{"column":7,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\pirates\\lib\\index.js","function":"Object.newLoader [as .js]","line":141,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1037,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":878,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.runMain","line":81,"method":"runMain","native":false},{"column":12,"file":"D:\\NodeJS\\FundoNotes\\node_modules\\@babel\\node\\src\\_babel-node.ts","function":null,"line":214,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1159,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1213,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1037,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":878,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":81,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":47,"file":"node:internal/main/run_main_module","function":null,"line":23,"method":null,"native":false}]}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T04:40:56.079Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T04:40:59.030Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T04:43:05.924Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T04:54:50.614Z"}
+error: 
+    status - 500 
+    message - ValidationError: "confirmPassword" is required 
+    url - /api/v1/users/Register 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T04:58:32.894Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T05:49:04.312Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T05:49:04.890Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Fri Jan 06 2023 11:19:12 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1385275},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18719013,"external":21472120,"heapTotal":126980096,"heapUsed":120941040,"rss":35799040},"pid":5036,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2023-01-06T05:49:12.927Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T05:50:05.267Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Fri Jan 06 2023 12:12:18 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1388461},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18648416,"external":21402338,"heapTotal":127504384,"heapUsed":120750360,"rss":39731200},"pid":29180,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2023-01-06T06:42:18.919Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Fri Jan 06 2023 12:27:19 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1389362},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18461096,"external":21214203,"heapTotal":122785792,"heapUsed":116256160,"rss":147812352},"pid":11540,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2023-01-06T06:57:19.766Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T12:55:11.266Z"}
+error: 
+    status - 500 
+    message - Error: Enter Password is invalid
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:36:13)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T12:56:57.385Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T13:09:59.954Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T13:11:02.185Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T13:12:13.937Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T13:15:52.069Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of null (reading 'length')
+    at _callee2$ (D:\NodeJS\FundoNotes\src\services\/user.service.js:29:12)
+    at tryCatch (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:44:17)
+    at Generator.<anonymous> (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:125:22)
+    at Generator.next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:69:21)
+    at asyncGeneratorStep (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (D:\NodeJS\FundoNotes\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T13:18:06.407Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T14:03:04.538Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T14:04:19.607Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T14:05:14.367Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Fri Jan 06 2023 19:35:33 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1415055},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18656283,"external":21409390,"heapTotal":126193664,"heapUsed":119249720,"rss":34979840},"pid":6528,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2023-01-06T14:05:33.446Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/undefined 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2023-01-06T15:08:17.189Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Fri Jan 06 2023 20:38:27 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1418830},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18531827,"external":21285749,"heapTotal":127766528,"heapUsed":120919528,"rss":29900800},"pid":24444,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2023-01-06T15:08:27.897Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'undefined', userID: 'Rutujapatil@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/undefined 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2023-01-06T15:09:23.596Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'undefined', userID: 'Rutujapatil@gmail.com' }" (type Object) at path "_id" for model "Note"
+    at model.Query.exec (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\NodeJS\FundoNotes\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/note/undefined 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2023-01-06T15:10:03.166Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/note/63b7abeaf93e7a13ac7fdcec 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2023-01-06T17:01:16.363Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Fri Jan 06 2023 22:31:22 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1425604},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18724198,"external":21478120,"heapTotal":132136960,"heapUsed":125051408,"rss":34025472},"pid":21216,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2023-01-06T17:01:22.259Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Sat Jan 07 2023 00:38:36 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1433238},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18658388,"external":21411495,"heapTotal":127766528,"heapUsed":120671928,"rss":49000448},"pid":2012,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2023-01-06T19:08:36.213Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: 
+    status - 500 
+    message - ValidationError: "title" is not allowed to be empty 
+    url - /api/v1/note/create 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2023-01-06T23:28:10.041Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Sat Jan 07 2023 05:37:30 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1451173},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18632534,"external":21385641,"heapTotal":125407232,"heapUsed":119248576,"rss":30732288},"pid":17300,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2023-01-07T00:07:30.725Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Sat Jan 07 2023 10:42:41 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1469483},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18489382,"external":21242489,"heapTotal":123047936,"heapUsed":115974800,"rss":87150592},"pid":24360,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2023-01-07T05:12:41.124Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Mon Jan 09 2023 09:54:16 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1639379},"process":{"argv":["node","D:\\NodeJS\\FundoNotes\\src\\index.js"],"cwd":"D:\\NodeJS\\FundoNotes","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18423227,"external":21176334,"heapTotal":120426496,"heapUsed":115632000,"rss":165986304},"pid":22132,"uid":null,"version":"v18.12.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2023-01-09T04:24:16.930Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}

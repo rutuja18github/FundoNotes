@@ -6,7 +6,8 @@ export const newUserValidator = (req, res, next) => {
     firstname: Joi.string().pattern(new RegExp(/^[A-Z]{1}[a-z]/)).min(4).required(),
     lastname: Joi.string().pattern(new RegExp(/^[A-Z]{1}[a-z]/)).min(4).required(),
     email: Joi.string().email().lowercase().required(),
-    password: Joi.string().pattern(new RegExp(passwordRegex)).min(8).max(15).required()
+    password: Joi.string().pattern(new RegExp(passwordRegex)).min(8).max(15).required(),
+    confirmPassword:Joi.string().pattern(new RegExp(passwordRegex)).min(8).max(15).required()
   });
   const { error, value } = schema.validate(req.body);
   if (error) {
